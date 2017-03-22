@@ -41,6 +41,31 @@ $(window).on('orientationchange', function () {
 });
 });
 
+//product slider
+$(document).ready(function(){
+	$('.sliderContainer').slick({
+		slidesToShow: 4,
+		slidesToScroll: 4,
+		prevArrow: $('.prev'),
+		nextArrow: $('.next'),
+		 responsive: [
+		{
+				breakpoint: 1024,
+				settings: {
+					centerMode: true,
+					centerPadding: '40px',
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3
+				}
+			}
+			]
+	});
+});
 
 //
 // (function($){
@@ -70,19 +95,30 @@ $(window).on('orientationchange', function () {
 // 	}
 // 	WB.submenuOpen = function(){
 // 			var link = $('.c-menu__item');
+// 			var hover = $('.hoverMask');
+// 			var submenu = $('.c-menu--submenu');
 // 			$('.c-menu__item').mouseover(function(){
 // 				$('.c-menu--submenu').removeClass('openSubmenu');
 // 			});
 // 			link.mouseover(function(){
 // 				if ( $(this).children('.c-menu--submenu').length > 0 ){
-// 					$(".hoverMask").css("opacity", "1");
+// 					hover.css("opacity", "1");
 // 					$('.c-menu--submenu').addClass('openSubmenu');
+// 				}else{
+// 					$(".hoverMask").css("opacity", "0");
+// 					$('.c-menu--submenu').removeClass('openSubmenu');
 // 				}
 // 			});
-// 			$('section.main-content').mouseover(function(){
+// 			$('section.main-content, .b-logo').mouseover(function(){
 // 				$(".hoverMask").css("opacity", "0");
 // 				$('.c-menu--submenu').removeClass('openSubmenu');
 // 			});
+// 	}
+// 	WB.paginationFix = function(){
+// 		var prevNumber = $('li.pagePrev');
+// 		var nextNumber = $('li.pageNext')
+// 		prevNumber.next().css('padding-left','5.5rem');
+// 		nextNumber.prev().css('padding-right','3.5rem');
 // 	}
 // 	WB.mobileMenu = function (){
 // 		var hamburger = $('.hamburger');
@@ -167,9 +203,7 @@ $(window).on('orientationchange', function () {
 // 		    {
 // 		      breakpoint: 768,
 // 		      settings: {
-// 		        centerMode: true,
-// 		        centerPadding: '40px',
-// 		        slidesToShow: 2
+// 		        slidesToShow: 3
 // 		      }
 // 		    }
 // 		    ]
@@ -187,6 +221,7 @@ $(window).on('orientationchange', function () {
 // 		WB.mostreadSlider();
 // 		WB.productSlider();
 // 		WB.moveMainContainer();
+// 		WB.paginationFix();
 //
 // 		enquire.register("screen and (min-width:1025px)", function() {
 // 			WB.submenuOpen();
