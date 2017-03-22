@@ -4,6 +4,7 @@
 
 .article {
   position: relative;
+  margin-bottom: 7.8rem;
 
 
 
@@ -56,6 +57,11 @@
           left: 9.9rem;
           top: 50%;
 
+        }
+      }
+      .c-tags__item {
+        &:after {
+          border-color:colorFunc(tag, $currentTag);
         }
       }
     }

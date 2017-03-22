@@ -3601,7 +3601,8 @@ h4 {
 
 .b-productShow {
   width: 100%;
-  padding: 4rem 0;
+  padding: 4rem 0 2rem 0;
+  margin-bottom: 8rem;
 }
 .b-productShow .productSlider {
   position: relative;
@@ -4532,6 +4533,36 @@ h4 {
   padding: 0;
 }
 
+.c-tags {
+  margin-bottom: 3rem;
+}
+.c-tags__item {
+  font-weight: 800;
+  display: inline-block;
+  color: #000;
+  overflow: hidden;
+  position: relative;
+  font-size: 1.5rem;
+  padding: 0 0.9rem;
+  margin-right: 2rem;
+}
+.c-tags__item--link {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 1rem;
+  z-index: 1;
+}
+.c-tags__item:after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  border-style: solid;
+  border-width: 0.9rem;
+}
+
 .staticPage {
   background-color: #FFF;
   text-align: center;
@@ -4658,6 +4689,7 @@ h4 {
 
 .article {
   position: relative;
+  margin-bottom: 7.8rem;
 }
 .article .c-taglogo {
   width: 8.333%;
@@ -4719,7 +4751,7 @@ h4 {
 }
 .article .article-footer {
   padding: 0 16.8rem;
-  margin-top: 4.5rem;
+  margin-top: 6.2rem;
 }
 .article .article-main-img {
   float: right;
@@ -4766,6 +4798,9 @@ h4 {
   left: 9.9rem;
   top: 50%;
 }
+.article.food .c-tags__item:after {
+  border-color: #94EC9E;
+}
 .article.beauty .article-title:before {
   content: "";
   border-width: 0 0 0 0.4rem;
@@ -4793,6 +4828,9 @@ h4 {
   position: absolute;
   left: 9.9rem;
   top: 50%;
+}
+.article.beauty .c-tags__item:after {
+  border-color: #F0CBC5;
 }
 .article.deco .article-title:before {
   content: "";
@@ -4822,6 +4860,9 @@ h4 {
   left: 9.9rem;
   top: 50%;
 }
+.article.deco .c-tags__item:after {
+  border-color: #E4D1B0;
+}
 .article.fashion .article-title:before {
   content: "";
   border-width: 0 0 0 0.4rem;
@@ -4849,6 +4890,9 @@ h4 {
   position: absolute;
   left: 9.9rem;
   top: 50%;
+}
+.article.fashion .c-tags__item:after {
+  border-color: #ABE5DC;
 }
 
 .clearfix:after, .main-content:after, .two-col:after, .site-header:after, .b-mostread:after, .b-teaser-product:after, .b-teaser-article:after, .b-teaser-blog:after, .b-teaser-dossier:after, .b-push:after, .b-coupdecoeur:after, .b-dossier:after, .b-tagheader:after, .b-author--big:after, .b-author--small:after, .c-blockquote:after {
