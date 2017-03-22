@@ -4273,7 +4273,7 @@ h4 {
 
 .c-blockquote {
   font-family: "Cormorant", serif;
-  margin: 6rem 0 6.9rem 0;
+  margin: 6rem 0 2.8rem 0;
 }
 .c-blockquote__icon {
   font-family: "fontello";
@@ -4516,14 +4516,9 @@ h4 {
   clear: both;
   padding: 1.8rem 0 0 8.3rem;
 }
-.c-breadcrumb__list {
-  display: block;
-}
 .c-breadcrumb__item {
   font-size: 1rem;
   display: inline-block;
-}
-.c-breadcrumb__item a {
   color: #9e9e9e;
 }
 .c-breadcrumb__item:after {
@@ -4698,6 +4693,7 @@ h4 {
 .article .article-main-content {
   padding: 0 16.8rem;
   margin-top: 4.5rem;
+  margin-bottom: 3.5rem;
 }
 .article .article-main-content p {
   font-weight: lighter;
@@ -4717,6 +4713,13 @@ h4 {
   line-height: 2.6;
   padding-left: 0.2rem;
   text-align: left;
+}
+.article .article-video {
+  margin: 4rem auto 0 auto;
+}
+.article .article-footer {
+  padding: 0 16.8rem;
+  margin-top: 4.5rem;
 }
 .article .article-main-img {
   float: right;

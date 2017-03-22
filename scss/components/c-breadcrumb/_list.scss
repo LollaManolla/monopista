@@ -2,16 +2,11 @@
 //-------------------COMPONENT BREADCRUMB item
 //-------------------------
 
-&__list {
-	display: block;
 
-}
 &__item {
 		font-size: 1rem;
 		display: inline-block;
-		a {
-			color: $nobel;
-		}
+		color: $nobel;
 		&:after {
 			content: "-";
 			display: inline-block;
