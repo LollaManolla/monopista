@@ -828,8 +828,6 @@ h4 {
 .normalHeader {
   background-color: #FFF;
   border-bottom: 1px solid black;
-  max-width: none;
-  padding: 3rem 12.5%;
 }
 
 .normalHeader ~ .header-mask {
