@@ -7,11 +7,12 @@
 
 
 
-  @import "common/taglogo.scss",
-  "common/article-title.scss",
-  "common/article-publish.scss",
-  "common/article-intro.scss",
-  "common/article-main-content.scss",
+  @import "common/taglogo",
+    "common/article-header",
+  "common/article-title",
+  "common/article-publish",
+  "common/article-intro",
+  "common/article-main-content",
 
 
   "portrait/article-main-img",
