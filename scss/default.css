@@ -4283,6 +4283,13 @@ h4 {
   position: relative;
   text-align: center;
 }
+.c-blockquote__icon:before {
+  width: 30.222%;
+  content: "";
+  position: absolute;
+  left: 9.9rem;
+  top: 50%;
+}
 .c-blockquote__text {
   display: block;
   width: 57.333%;
@@ -4705,6 +4712,13 @@ h4 {
   font-size: 5rem;
   padding-left: 2.2rem;
 }
+.article .article-title:before {
+  height: 88.800%;
+  position: absolute;
+  left: -0.05rem;
+  top: 0.9rem;
+  bottom: 0;
+}
 .article .article-publish {
   font-weight: 800;
   font-family: "Cormorant", serif;
@@ -4745,7 +4759,48 @@ h4 {
   text-align: left;
 }
 .article .article-video {
+  width: 68%;
   margin: 4rem auto 0 auto;
+  text-align: center;
+  position: relative;
+  padding-bottom: 34%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  border-style: solid;
+  border-width: 1.1rem;
+}
+.article .article-video iframe,
+.article .article-video object,
+.article .article-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.article .article-video__icon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  z-index: 1;
+}
+.article .article-video__icon .googleplay {
+  font-family: "fontello";
+  color: #FFF;
+  font-size: 5.5rem;
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 2;
 }
 .article .article-footer {
   padding: 0 16.8rem;
@@ -4773,11 +4828,6 @@ h4 {
   border-width: 0 0 0 0.4rem;
   border-style: solid;
   border-color: transparent transparent transparent #94EC9E;
-  height: 88.800%;
-  position: absolute;
-  left: -0.05rem;
-  top: 0.9rem;
-  bottom: 0;
 }
 .article.food .article-main-content a {
   background-color: #94EC9E;
@@ -4790,13 +4840,9 @@ h4 {
 }
 .article.food .c-blockquote__icon:before {
   border: solid 0.3rem #94EC9E;
-  width: 30.222%;
-  content: "";
-  position: absolute;
-  left: 9.9rem;
-  top: 50%;
 }
-.article.food .c-tags__item:after {
+.article.food .c-tags__item:after,
+.article.food .article-video {
   border-color: #94EC9E;
 }
 .article.beauty .article-title:before {
@@ -4804,11 +4850,6 @@ h4 {
   border-width: 0 0 0 0.4rem;
   border-style: solid;
   border-color: transparent transparent transparent #F0CBC5;
-  height: 88.800%;
-  position: absolute;
-  left: -0.05rem;
-  top: 0.9rem;
-  bottom: 0;
 }
 .article.beauty .article-main-content a {
   background-color: #F0CBC5;
@@ -4821,13 +4862,9 @@ h4 {
 }
 .article.beauty .c-blockquote__icon:before {
   border: solid 0.3rem #F0CBC5;
-  width: 30.222%;
-  content: "";
-  position: absolute;
-  left: 9.9rem;
-  top: 50%;
 }
-.article.beauty .c-tags__item:after {
+.article.beauty .c-tags__item:after,
+.article.beauty .article-video {
   border-color: #F0CBC5;
 }
 .article.deco .article-title:before {
@@ -4835,11 +4872,6 @@ h4 {
   border-width: 0 0 0 0.4rem;
   border-style: solid;
   border-color: transparent transparent transparent #E4D1B0;
-  height: 88.800%;
-  position: absolute;
-  left: -0.05rem;
-  top: 0.9rem;
-  bottom: 0;
 }
 .article.deco .article-main-content a {
   background-color: #E4D1B0;
@@ -4852,13 +4884,9 @@ h4 {
 }
 .article.deco .c-blockquote__icon:before {
   border: solid 0.3rem #E4D1B0;
-  width: 30.222%;
-  content: "";
-  position: absolute;
-  left: 9.9rem;
-  top: 50%;
 }
-.article.deco .c-tags__item:after {
+.article.deco .c-tags__item:after,
+.article.deco .article-video {
   border-color: #E4D1B0;
 }
 .article.fashion .article-title:before {
@@ -4866,11 +4894,6 @@ h4 {
   border-width: 0 0 0 0.4rem;
   border-style: solid;
   border-color: transparent transparent transparent #ABE5DC;
-  height: 88.800%;
-  position: absolute;
-  left: -0.05rem;
-  top: 0.9rem;
-  bottom: 0;
 }
 .article.fashion .article-main-content a {
   background-color: #ABE5DC;
@@ -4883,13 +4906,9 @@ h4 {
 }
 .article.fashion .c-blockquote__icon:before {
   border: solid 0.3rem #ABE5DC;
-  width: 30.222%;
-  content: "";
-  position: absolute;
-  left: 9.9rem;
-  top: 50%;
 }
-.article.fashion .c-tags__item:after {
+.article.fashion .c-tags__item:after,
+.article.fashion .article-video {
   border-color: #ABE5DC;
 }
 

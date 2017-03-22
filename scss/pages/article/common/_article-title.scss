@@ -8,5 +8,12 @@
   position: relative;
   font-size: 5rem;
   padding-left: 2.2rem;
+  &:before {
+    height: 88.800%;
+    position: absolute;
+    left: -0.05rem;
+    top: 0.9rem;
+    bottom: 0;
+  }
 
 }

@@ -32,11 +32,6 @@
           border-width:0 0 0 0.4rem;
           border-style: solid;
           border-color: transparent transparent transparent colorFunc(tag, $currentTag);
-          height: 88.800%;
-          position: absolute;
-          left: -0.05rem;
-          top: 0.9rem;
-          bottom: 0;
         }
       }
       .article-main-content {
@@ -51,18 +46,11 @@
         color: colorFunc(tag, $currentTag);
         &:before {
           border: solid 0.3rem colorFunc(tag, $currentTag);
-          width: 30.222%;
-          content: "";
-          position: absolute;
-          left: 9.9rem;
-          top: 50%;
-
         }
       }
-      .c-tags__item {
-        &:after {
+      .c-tags__item:after,
+      .article-video {
           border-color:colorFunc(tag, $currentTag);
-        }
       }
     }
   }
