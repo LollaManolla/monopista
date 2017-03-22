@@ -4696,6 +4696,12 @@ h4 {
   position: relative;
   margin-bottom: 7.8rem;
 }
+.article .article-main-img {
+  float: right;
+  margin-top: 2.2rem;
+  padding-left: 1rem;
+  position: relative;
+}
 .article .c-taglogo {
   width: 8.333%;
   padding-left: 2.2rem;
@@ -4802,26 +4808,53 @@ h4 {
   transform: translateY(-50%);
   z-index: 2;
 }
-.article .article-footer {
-  padding: 0 16.8rem;
-  margin-top: 6.2rem;
+.article .article-video__icon .googleplay:before {
+  content: "";
+  border: solid 3px white;
+  border-radius: 50%;
+  width: 198%;
+  position: absolute;
+  height: 165%;
+  top: -2rem;
+  left: -2.7rem;
 }
 .article .article-main-img {
   float: right;
   margin-top: 2.2rem;
   padding-left: 1rem;
+  position: relative;
+}
+.article .article-footer {
+  padding: 0 16.8rem;
+  margin-top: 6.2rem;
+}
+.article--portrait .article-main-img {
   width: 45.900%;
 }
-.article .article-intro {
+.article--portrait .article-intro {
   padding-top: 4.4rem;
   padding-inline-start: 2.2rem;
 }
-.article h3 {
+.article--portrait h3 {
   font-weight: 800;
   font-family: "Open Sans", Arial, Helvetica, Tahoma, sans-serif;
   position: relative;
   font-size: 3rem;
   margin-bottom: 2.4rem;
+}
+.article--landscape .article-main-img {
+  width: 72.333%;
+  position: relative;
+}
+.article--landscape .article-title {
+  width: 50%;
+  line-height: 1.08;
+}
+.article--landscape .b-author--small {
+  float: none;
+}
+.article--landscape .diaporama {
+  position: absolute;
 }
 .article.food .article-title:before {
   content: "";

@@ -8,19 +8,36 @@
 
 
 
-  @import "common/taglogo",
+  @import
+        "common/article-main-img",
+  "common/taglogo",
     "common/article-header",
   "common/article-title",
   "common/article-publish",
   "common/article-intro",
   "common/article-main-content",
     "common/article-video",
-      "common/article-footer",
+        "common/diaporama",
+      "common/article-footer";
 
-
-  "portrait/article-main-img",
+//portrait
+&--portrait {
+  @import  "portrait/article-main-img",
     "portrait/article-intro",
-  "portrait/subtitle";
+  "portrait/subtitle",
+  "portrait/diaporama";
+}
+
+&--landscape {
+  @import   "landscape/article-main-img",
+   "landscape/article-title",
+    "landscape/b-author",
+    "landscape/diaporama";
+  //   "landscape/article-intro",
+  // "landscape/subtitle";
+}
+
+
 
   //colors
   @for $i from 1 to $tagLength {
