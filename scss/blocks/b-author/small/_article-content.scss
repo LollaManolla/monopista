@@ -3,39 +3,45 @@
 // //-------------------------
 
 .article-content {
-  // bottom: 0;
-  // height: 100%;
-  // left: 0;
-  // position: absolute;
-  // right: 0;
-  // top: 0;
-  // width: 100%;
-  // display: table;
-  // vertical-align: top;
-  // z-index: 1;
-  display: table-header-group;
+  bottom: 0;
+  height: 100%;
+  left: -1rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  display: table;
+  vertical-align: middle;
+  z-index: 1;
+
   @include breakpoint (tablet) {
-    // left: 0;
-    // right: auto;
-    // width: 52%;
+    vertical-align: top;
   }
   @include breakpoint (phone) {
-    // left: 0;
-    // right: auto;
-    // width: 52%;
+  vertical-align: top;
+  left: 0.2rem;
   }
   &-wrapper {
-    // display: table-cell;
-    // vertical-align: top;
-    // padding: 9% 0;
 
+    position: relative;
+    padding: 0 0 1.3rem 0;
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
 
 
     @include breakpoint (tablet) {
-      //padding: 9% 0 0 10.5%;
+    vertical-align: top;
+    padding: 2.4rem 0 1.3rem 0;
+
     }
+
     @include breakpoint (phone) {
-      //padding: 33% 0 0 11%;
+      vertical-align: top;
+      padding: 2.4rem 0 1.3rem 0;
+
     }
+
   }
+
 }

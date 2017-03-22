@@ -3,20 +3,24 @@
 // //-------------------------
 
 &--small {
-  text-align: center;
   @extend .clearfix;
-  position: relative;
+  text-align: center;
   float: left;
+  position: relative;
+  margin-bottom: 5rem;
   height: 0;
-  padding-bottom: 12.4%;
   overflow: hidden;
+  padding-bottom: 20.7%;
+  width: 21.6666%;
+  display: inline-block;
   @include breakpoint (tablet) {
-  padding-bottom: 21.22%;
+    padding-bottom: 25.444%;
+    width: 40%;
   }
 
   @include breakpoint (phone) {
-    padding-bottom: 0;
-    height: 197px;
+    padding-bottom: 37%;
+    width: 40%;
   }
   @for $i from 1 to $tagLength {
     $currentTag: nth($tagArray, $i);

@@ -3894,21 +3894,25 @@ h4 {
 }
 .b-author--small {
   text-align: center;
-  position: relative;
   float: left;
+  position: relative;
+  margin-bottom: 5rem;
   height: 0;
-  padding-bottom: 12.4%;
   overflow: hidden;
+  padding-bottom: 20.7%;
+  width: 21.6666%;
+  display: inline-block;
 }
 @media (min-width: 767px) and (max-width: 1024px) {
   .b-author--small {
-    padding-bottom: 21.22%;
+    padding-bottom: 25.444%;
+    width: 40%;
   }
 }
 @media (max-width: 767px) {
   .b-author--small {
-    padding-bottom: 0;
-    height: 197px;
+    padding-bottom: 37%;
+    width: 40%;
   }
 }
 .b-author--small.food .article-author-quote,
@@ -3928,24 +3932,71 @@ h4 {
   color: #ABE5DC;
 }
 .b-author--small img {
+  max-width: none;
+  width: 45%;
   position: absolute;
   top: auto;
-  bottom: -2.3rem;
-  left: 49%;
-  transform: translateX(-49%);
+  bottom: -1.8rem;
+  left: 44%;
+  transform: translateX(-44%);
 }
 @media (min-width: 767px) and (max-width: 1024px) {
   .b-author--small img {
-    bottom: -2.90rem;
+    bottom: -2.1rem;
+    width: 42%;
+    left: 45%;
+    transform: translateX(-44%);
   }
 }
 @media (max-width: 767px) {
   .b-author--small img {
-    bottom: 0;
+    bottom: -0.6rem;
+    width: 55%;
+    left: 48%;
+    transform: translateX(-48%);
+    max-width: 100%;
   }
 }
 .b-author--small .article-content {
-  display: table-header-group;
+  bottom: 0;
+  height: 100%;
+  left: -1rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  display: table;
+  vertical-align: middle;
+  z-index: 1;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .b-author--small .article-content {
+    vertical-align: top;
+  }
+}
+@media (max-width: 767px) {
+  .b-author--small .article-content {
+    vertical-align: top;
+  }
+}
+.b-author--small .article-content-wrapper {
+  position: relative;
+  padding: 0 0 1.3rem 0;
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .b-author--small .article-content-wrapper {
+    vertical-align: top;
+    padding: 2.4rem 0 1.3rem 0;
+  }
+}
+@media (max-width: 767px) {
+  .b-author--small .article-content-wrapper {
+    vertical-align: top;
+    padding: 2.4rem 0 1.3rem 0;
+  }
 }
 .b-author--small .article-author {
   font-family: "Helnuheavy", Arial, Helvetica, Tahoma, sans-serif;
