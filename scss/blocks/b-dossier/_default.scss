@@ -1,0 +1,28 @@
+//-------------------------
+//-------------------BLOCK DOSSIER
+//-------------------------
+
+.b-dossier {
+	@extend .clearfix;
+	position: relative;
+	margin-bottom: 3rem;
+	height: 0;
+	overflow: hidden;
+	padding-bottom:50.444%;
+	@include breakpoint (tablet) {
+		margin-bottom: 6.5rem;
+		padding-bottom:60%;
+	}
+	@include breakpoint (phone) {
+		padding-bottom:66.333%;
+		margin-bottom: 7.4rem;
+	}
+
+
+@import "image",
+				"article-content",
+			 "block-title",
+								"article-title",
+								"article-intro",
+								"c-btn";
+}

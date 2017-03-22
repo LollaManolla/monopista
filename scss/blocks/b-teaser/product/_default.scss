@@ -1,0 +1,35 @@
+// //-------------------------
+// //-------------------BLOCK TEASER product
+// //-------------------------
+
+.b-teaser-product {
+  @extend .clearfix;
+  position: relative;
+  margin-bottom: 5rem;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 123%;
+
+  @include breakpoint (tablet) {
+    margin-bottom: 6.8rem;
+    padding-bottom:60.222%;
+  }
+
+  @include breakpoint (phone) {
+     padding-bottom:66%;
+    margin-bottom: 5rem;
+  }
+  @import "product-common/image",
+          "product-common/taglogo",
+          "product-common/article-content",
+          "product-common/article-title",
+          "product-common/article-intro",
+          "product-common/btn",
+          "product-visible/default",
+          "product-hidden/default";
+          
+           .c-linkfull {
+             z-index: 2;
+           }
+
+}

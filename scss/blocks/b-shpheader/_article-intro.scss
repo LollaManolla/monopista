@@ -1,0 +1,43 @@
+//-------------------------
+//-------------------BLOCK SHP HEADER article intro
+//-------------------------
+
+@for $i from 1 to $tagLength {
+	$currentTag: nth($tagArray, $i);
+	&.#{$currentTag} {
+		.article-intro  {
+			@include breakpoint (phone) {
+			color: colorFunc(tag, $currentTag);
+		}
+		}
+	}
+}
+
+
+
+.article-intro {
+	display: block;
+	font-weight: 700;
+	width: 50%;
+	margin: 0 auto;
+	line-height: 1.4;
+	font-size: 1.4rem;
+
+	@include breakpoint (tablet) {
+		width: 72%;
+		font-size: 2.85rem;
+		line-height: 1.3;
+
+	}
+
+	@include breakpoint (phone) {
+		width: 90%;
+		font-size: 4rem;
+		line-height: 1.45;
+
+		position: relative;
+	top: 8rem;
+
+	}
+
+}

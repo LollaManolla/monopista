@@ -1,0 +1,27 @@
+// //-------------------------
+// //-------------------BLOCK TEASER product hidden
+// //-------------------------
+
+&.product--hidden {
+  @include breakpoint (phone) {
+    .article-content {
+      padding: 5% 7% 0;
+    }
+    .article-title{
+      padding-right: 8rem;
+    }
+    .article-intro{
+      padding-right: 34rem;
+    }
+    .c-btn {
+      padding: 2.4rem;
+    }
+    .c-btn--wrapper {
+      bottom: 4.2rem;
+      display: block;
+      position: absolute;
+      right: 5.4rem;
+      width: 28%;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+// //-------------------------
+// //-------------------BLOCK TEASER blog
+// //-------------------------
+
+&--big {
+  color: $black;
+  text-align: center;
+  @extend .clearfix;
+  position: relative;
+  margin-bottom: 5rem;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 50%;
+
+  @include breakpoint (tablet) {
+    margin-bottom: 6.8rem;
+    padding-bottom:50%;
+  }
+
+  @include breakpoint (phone) {
+    padding-bottom:50%;
+    margin-bottom: 5rem;
+  }
+  @for $i from 1 to $tagLength {
+    $currentTag: nth($tagArray, $i);
+    &.#{$currentTag} {
+      background-color: colorFunc(tag, $currentTag);
+    }
+  }
+  @import "image",
+          "article-content",
+          "article-author",
+          "article-author-quote";
+}

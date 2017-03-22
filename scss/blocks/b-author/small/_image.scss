@@ -1,0 +1,24 @@
+// //-------------------------
+// //-------------------BLOCK TEASER blog img
+// //-------------------------
+
+img {
+  //display: block;
+
+
+  //width: 73%;
+
+ position: absolute;
+ top: auto;
+ bottom: -2.3rem;
+ left: 49%;
+ transform: translateX(-49%);
+  @include breakpoint (tablet){
+  //  width: 75%;
+  bottom: -2.90rem;
+  }
+  @include breakpoint (phone){
+  //  width: auto;
+    bottom:0;
+  }
+}

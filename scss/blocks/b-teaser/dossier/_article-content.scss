@@ -1,0 +1,34 @@
+//-------------------------
+//-------------------BLOCK TEASER DOSSIER wrapper
+//-------------------------
+
+.article-content {
+  color: $white;
+  bottom: 0;
+  height: 100%;
+  left: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  display: table;
+  vertical-align: middle;
+  z-index: 1;
+  @include breakpoint (tablet) {
+      width: 50%;
+  }
+  @include breakpoint (phone) {
+      width: 50%;
+  }
+  &-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left:6rem;
+    @include breakpoint (tablet) {
+      padding-left: 6rem;
+    }
+    @include breakpoint (phone) {
+      padding-left: 0.9rem;
+    }
+  }
+}

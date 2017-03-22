@@ -1,0 +1,48 @@
+//-------------------------
+//-------------------COMPONENT PAGINATION
+//-------------------------
+
+.c-pagination  {
+	clear: both;
+	margin: 0 auto;
+	text-align: center;
+	padding: 2rem 0;
+
+
+
+	@include breakpoint (tablet) {
+		text-align: left;
+		margin: 0 -4rem;
+	}
+
+		@include breakpoint (phone) {
+			position: relative;
+			max-width: 80%;
+		}
+
+	@import "list";
+
+	//colors
+	@for $i from 1 to $tagLength {
+		$currentTag: nth($tagArray, $i);
+		&.#{$currentTag} {
+			.pagination__list--item {
+				.current {
+					color: colorFunc(tag, $currentTag);
+				}
+				a:hover {
+					color: colorFunc(tag, $currentTag);
+				}
+			}
+			.btn {
+				&-prev,
+				&-next {
+					background-color: colorFunc(tag, $currentTag);
+					a {
+						color: $white;
+					}
+				}
+		}
+	}
+}
+}

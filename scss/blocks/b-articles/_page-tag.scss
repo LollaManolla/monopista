@@ -1,0 +1,26 @@
+//-------------------------
+//-------------------BLOCK ARTICLES on page tag
+//-------------------------
+
+
+	&.page-tag {
+		.article-small {
+			&:nth-child(odd) {
+				float: left;
+			}
+			&:nth-child(even) {
+				float: right;
+			}
+			&:nth-child(2) {
+				margin-top: 13rem;
+	@include breakpoint (tablet) {
+				margin-top: 14.3rem;
+			}
+
+						@include breakpoint (phone) {
+							margin-top: 11rem;
+						}
+			}
+		}
+
+	}

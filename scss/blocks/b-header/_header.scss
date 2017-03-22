@@ -1,0 +1,55 @@
+//-------------------------
+//-------------------HEADER
+//-------------------------
+.site-header {
+	@extend .clearfix;
+	 //height: 10.32rem; // temp
+	 padding: 3rem 8%;;
+	 position: fixed;
+	 top: 0;
+	 left: 0;
+	 margin: 0 auto;
+	 right: 0;
+		z-index: 999;
+		background-color: $headerGray;
+
+	&.home {
+		background-color: $headerGray;
+	}
+	&.home {
+		&:after{
+			display: block !important;
+		    position: absolute;
+		    top: 10.32rem;
+		    background-color: #e4e4e4;
+		    left: 0;
+		    right: 0;
+		    height: 20rem;
+		    z-index: -1;
+		}
+	}
+	@include breakpoint (toDesktop){
+		height: 14rem;
+		padding: 5rem 8.77%;
+		text-align: center;
+	}
+	@media screen and (min-width: 1750px){
+		padding: 3rem 6%;
+	}
+}
+.header-mask{
+		position: absolute;
+		top: 10rem;
+		background-color: #e4e4e4;
+ 	 	left: 0;
+	 	 margin: 0 auto;
+	 	 right: 0;
+		 max-width: 1440px;
+		height: 20rem;
+		z-index: -1;
+		opacity: 1;
+		display: block !important;
+}
+@import "tabletmenu",
+"hamburger",
+ "logo";

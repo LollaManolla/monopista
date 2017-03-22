@@ -1,0 +1,49 @@
+// //-------------------------
+// //-------------------BLOCK TEASER product visible
+// //-------------------------
+
+&.product--visible {
+  .teaser-product__img--front {
+    display: block;
+    @include centerer;
+    position: absolute;
+    @include breakpoint (tablet) {
+      left: 27%;
+      img {
+        width: 90%;
+      }
+    }
+    @include breakpoint (phone) {
+      left: 10%;
+      top: 9%;
+      float: left;
+      width: 32%;
+      transform: none;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .c-taglogo{
+    @for $i from 1 to $tagLength {
+      $currentTag: nth($tagArray, $i);
+      &--#{$currentTag} {
+
+        @include breakpoint (phone) {
+          left: -57%;
+          margin: 0;
+          position: absolute;
+          width: 30%;
+          top: 3.2rem;
+        }
+      }
+    }
+  }
+  .article-content {
+    @include breakpoint (phone) {
+      left: auto;
+      padding: 6% 3% 0;
+      width: 62%;
+    }
+  }
+}

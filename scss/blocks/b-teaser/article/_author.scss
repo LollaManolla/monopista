@@ -1,0 +1,38 @@
+// //-------------------------
+// //-------------------BLOCK TEASER article person
+// //-------------------------
+
+
+&__author {
+  font-family: $blackjack;
+  &.author {
+    &--small {
+      font-size: 3.4rem;
+      @include breakpoint (tablet) {
+        font-size: 3.3rem;
+      }
+      @include breakpoint (phone) {
+        font-size: 2.8rem;
+      }
+    }
+    &--big {
+      font-size: 5.5rem;
+      top: 1.3rem;
+      letter-spacing: 0.2rem;
+      left: 0.5rem;
+      position: relative;
+      @include breakpoint (toDesktop) {
+        top: 1.3rem;
+        letter-spacing: 0.2rem;
+        left: 0.5rem;
+      }
+      @include breakpoint (tablet) {
+        font-size: 5rem;
+
+      }
+      @include breakpoint (phone) {
+        font-size: 4.85rem;
+      }
+    }
+  }
+}

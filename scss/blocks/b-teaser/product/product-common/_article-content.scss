@@ -1,0 +1,28 @@
+// //-------------------------
+// //-------------------BLOCK TEASER article-content
+// //-------------------------
+
+.article-content {
+  color: $white;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  display: table;
+  vertical-align: top;
+  z-index: 1;
+  padding: 14% 11% 0;
+  @include breakpoint (tablet) {
+    left: auto;
+    width: 50%;
+    padding: 4% 6% 0;
+  }
+
+  &-wrapper {
+    display: table-cell;
+    vertical-align: top;
+  }
+}

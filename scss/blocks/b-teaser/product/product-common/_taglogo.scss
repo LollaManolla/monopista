@@ -1,0 +1,23 @@
+// //-------------------------
+// //-------------------BLOCK TEASER product tag logo
+// //-------------------------
+
+
+.c-taglogo{
+  @for $i from 1 to $tagLength {
+    $currentTag: nth($tagArray, $i);
+    &--#{$currentTag} {
+      width: 22%;
+      display: block;
+      margin-bottom:4.5rem;
+      @include breakpoint (tablet) {
+        width:36%;
+        margin-bottom: 3.5rem;
+      }
+      @include breakpoint (phone) {
+        width:21%;
+        margin-bottom: 2.8rem;
+      }
+    }
+  }
+}

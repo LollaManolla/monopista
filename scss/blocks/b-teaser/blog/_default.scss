@@ -1,0 +1,35 @@
+// //-------------------------
+// //-------------------BLOCK TEASER blog
+// //-------------------------
+
+.b-teaser-blog {
+  color: $black;
+  text-align: center;
+  @extend .clearfix;
+  position: relative;
+  margin-bottom: 5rem;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 123%;
+
+  @include breakpoint (tablet) {
+    margin-bottom: 6.8rem;
+    padding-bottom:60.222%;
+  }
+
+  @include breakpoint (phone) {
+    padding-bottom:66%;
+    margin-bottom: 5rem;
+  }
+  @for $i from 1 to $tagLength {
+    $currentTag: nth($tagArray, $i);
+    &.#{$currentTag} {
+      background-color: colorFunc(tag, $currentTag);
+    }
+  }
+  @import "image",
+          "article-content",
+          "article-author",
+          "article-author-quote",
+          "article-title";
+}

@@ -1,0 +1,45 @@
+//-------------------------
+//-------------------COMPONENT SUBMENU MENU
+//-------------------------
+
+&--submenu {
+    opacity: 0;
+    position: absolute;
+    top: 8.4rem;
+    left: -50%;
+    margin: 0 auto;
+    right: initial;
+    content: '';
+    z-index: 1;
+    width: 50rem;
+    @include transition(all .3s ease-in);
+    @include breakpoint (toDesktop){
+      transition: none;
+    }
+    li{
+        display: inline-block;
+        margin-right: 5%;
+        a{
+            color: $white;
+        }
+    }
+    &.openSubmenu{
+        opacity: 1;
+        z-index: 12;
+        display: block;
+        @include breakpoint (toDesktop){
+          left: 0;
+          right: 0;
+          background: $lightgreen;
+          width: 100%;
+          top: inherit;
+          position: relative;
+        }
+        li{
+          @include breakpoint (toDesktop){
+            display: block;
+            margin: 4% 0;
+          }
+        }
+    }
+}

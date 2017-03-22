@@ -1,0 +1,40 @@
+//-------------------------
+//-------------------BLOCK SOCIAL
+//-------------------------
+
+.b-social {
+	font-family:$fontFontello ;
+	display: inline-block;
+	vertical-align: middle;
+	width: 17%;
+    margin: 0 7%;
+    margin-left: 2%;
+	@include breakpoint (toDesktop){
+		width: 100%;
+		text-align: center;
+		margin: 4rem 0;
+	}
+	&__item {
+		display: inline-block;
+		margin: 0 4%;
+		&.item--search{
+			@include breakpoint (toDesktop){
+				display: none;
+			}
+		}
+		a {
+			display: block;
+			color: $black;
+			font-size: 1.7rem;
+			font-size: 1.1806vw;
+			@include breakpoint (bigDesktop){
+				font-size: 1.7rem;
+			}
+			@include breakpoint (toDesktop){
+				font-size: 4.5rem;
+			}
+		}
+
+	}
+}
+@import "social-wall";

@@ -1,0 +1,91 @@
+//-------------------------
+//-------------------FOOTER
+//-------------------------
+.b-footer {
+    background-color: $white;
+    padding: 3rem 8%;
+    @media screen and (min-width: 1750px){
+        padding: 3rem 4%;
+    }
+    .b-logo, nav, .footer-logo{
+        display: inline-block;
+        vertical-align: middle;
+        @include breakpoint (toDesktop){
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+        img{
+            @include breakpoint (toDesktop){
+                margin: 0 auto;
+                width: 20%;
+            }
+        }
+    }
+    .b-logo{
+      width: 20%;
+      @include breakpoint (toDesktop){
+        width: 100%;
+      }
+    }
+    nav{
+        font-size: 1.4rem;
+        font-size: 0.93085vw;
+        margin-left: 7%;
+        width: 33%;
+        @include breakpoint (toDesktop){
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-left: 0;
+            font-size: 2rem;
+        }
+        @media screen and (min-width: 1750px){
+            margin-left: 3%;
+            width: 38%;
+        }
+        a{
+            margin-right: 10%;
+            color: $lightGray;
+            @media screen and (min-width: 1750px){
+                margin-left: 3%;
+            }
+            @include breakpoint (bigDesktop){
+              font-size: 1.3rem;
+            }
+            @include breakpoint (toDesktop){
+                display: block;
+                text-align: center;
+                width: 100%;
+                margin: 5rem 0;
+            }
+        }
+    }
+    .footer-logo{
+        margin-top: 1rem;
+        @include breakpoint (toDesktop){
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+        img{
+            float: right;
+                @include breakpoint (toDesktop){
+                    margin: 0 auto;
+                    float: none;
+                    width: 20%;
+                }
+        }
+    }
+    .b-social{
+        width: 19%;
+        margin-left: 0%;
+        margin: 0 3%;
+        @include breakpoint (toDesktop){
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin: 6rem 0;
+        }
+    }
+}

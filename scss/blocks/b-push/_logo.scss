@@ -1,0 +1,22 @@
+//-------------------------
+//-------------------BLOCK PUSH TAG LOGO
+//-------------------------
+
+
+
+.c-taglogo {
+	@include centerer;
+	position: absolute;
+
+	top: 54.33%;
+	width: 62%;
+
+	@include breakpoint (tablet) {
+		width: 46%;
+		top: 50%;
+	}
+	@include breakpoint (phone) {
+		top: 50%;
+		width: 49%;
+	}
+}

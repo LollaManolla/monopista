@@ -1,0 +1,28 @@
+//-------------------------
+//-------------------BLOCK COUP DE COEUR article intro
+//-------------------------
+
+.article-intro {
+	color: $black;
+	font-size: 1.5rem;
+	 line-height: 1.4;
+	 margin-bottom: 8.8rem;
+	 padding-left: 13.3rem;
+	 width: 27%;
+	  position: relative;
+		z-index: 1;
+		display: block;
+	@include breakpoint (tablet) {
+	font-size: 2.27rem;
+	line-height: 1.4;
+	margin-left: 1.5rem;
+	margin-top: 1rem;
+	margin-bottom: 0;
+	padding-left: 0;
+	width: 39%;
+	}
+
+	@include breakpoint (phone) {
+		display: none;
+	}
+}

@@ -1,0 +1,24 @@
+//-------------------------
+//-------------------BLOCK COUP DE COEUR product image
+//-------------------------
+
+&__product-img {
+	z-index: 1;
+
+	max-width: 97%;
+	 position: relative;
+	 right: -2.5rem;
+
+	@include breakpoint (tablet) {
+		max-width: 116%;
+
+     right: 11%;
+	}
+
+	  @include breakpoint (phone) {
+			max-width: 126%;
+	    right: 22%;
+
+		}
+
+}

@@ -1,0 +1,42 @@
+//-------------------------
+//-------------------BLOCK TAG HEADER block title
+//-------------------------
+
+
+
+.b-title {
+  float: left;
+  width: 29%;
+  margin-top: 0.5rem;
+  @include breakpoint (tablet) {
+    margin-top: 2rem;
+    width: 48%;
+  }
+  @include breakpoint (phone) {
+    margin-top: 1.6rem;
+    width: 48%;
+  }
+
+  &__full {
+    font-size: 6rem;
+    @include breakpoint (desktop) {
+      letter-spacing: 0.4rem;
+      padding: 0.15rem 0.55rem;
+    }
+    @include breakpoint (tablet) {
+      font-size: 9.3rem;
+    }
+    @include breakpoint (phone) {
+      font-size: 6.7rem;
+    }
+  }
+  &__normal {
+    font-size: 7rem;
+    @include breakpoint (tablet) {
+      font-size: 8.3rem;
+    }
+    @include breakpoint (phone) {
+      font-size: 6.3rem;
+    }
+  }
+}

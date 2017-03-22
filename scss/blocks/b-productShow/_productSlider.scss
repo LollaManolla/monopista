@@ -1,0 +1,81 @@
+//-------------------------
+//-------------PRODUCT SLIDER
+//-------------------------
+
+.b-productShow {
+	width: 100%;
+	padding: 4rem 0;
+	.productSlider {
+		position: relative;
+		width: 80%;
+		margin: 0 auto;
+		@include breakpoint(tablet) {
+			width: 100%;
+			margin: 0 0 0 15%;
+		}
+		@include breakpoint(phone) {
+			width: 95%;	
+			margin: 0 0 0 5%;
+		}
+		.sliderContainer {
+			width: 84%;
+			margin: 0 auto;
+			text-align: center;
+			@include breakpoint(phone) {
+				width: 100%;
+				margin: 0 0 0 5%;
+			}
+		}
+		&__logo {
+			margin-bottom: 1rem;
+		}
+	}
+	.slideBloc {
+		display: inline-block;
+		margin: 0 1rem;
+		.imgWrapper {
+			padding: 0.6rem;
+			border: 2px solid white;
+		}
+		&__title {
+			margin-top: 1.5rem;
+			font-size: 2.4rem;
+			text-align: left;
+		}
+	}
+	&.tag{
+		@for $i from 1 to $tagLength {
+			$currentTag: nth($tagArray, $i);
+			&--#{$currentTag} {
+				background-color: colorFunc(tag, $currentTag);
+			}
+		}
+	}
+	.sliderArrow {
+		position: absolute;
+		top: 13rem;
+		cursor: pointer;
+		&.prev,&.next {
+			@include breakpoint(tablet) {
+				display: none!important;
+			}
+			@include breakpoint(phone) {
+				display: none!important;
+			}
+		}
+		
+		&.prev {
+			left: 2rem;
+		}
+		&.next {
+			right: 2rem;
+		}
+		svg {
+			width: 4rem;
+			fill: $white;
+		}
+	}
+	.slick-list.draggable {
+		padding: 0!important;
+	}
+}

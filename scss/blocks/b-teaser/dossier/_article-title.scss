@@ -1,0 +1,24 @@
+//-------------------------
+//-------------------BLOCK TEASER DOSSIER article title
+//-------------------------
+
+.article-title {
+  font-family: $blackjack;
+  font-size: 12rem;
+  line-height: 0.8;
+  margin-bottom: 2rem;
+  @include breakpoint (tablet) {
+    font-size: 7.45rem;
+    margin-bottom: 1.7rem;
+    margin-top: 0.3rem;
+  }
+  @include breakpoint (phone) {
+    font-size: 9.4rem;
+    line-height: 0.75;
+    margin-bottom: 2.5rem;
+    margin-top: 2.2rem;
+  }
+  a {
+    color: $white;
+  }
+}

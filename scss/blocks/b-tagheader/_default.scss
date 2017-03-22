@@ -1,0 +1,19 @@
+//-------------------------
+//-------------------BLOCK TAG HEADER
+//-------------------------
+
+
+
+
+.b-tagheader  {
+	@extend .clearfix;
+	@include breakpoint (desktop) {
+		padding: 0 8.3rem;
+		margin-top: 6.3rem;
+	}
+	@include breakpoint (phone) {
+		padding: 0 1.5rem;
+	}
+	@import "block-title",
+					"article-intro";
+}

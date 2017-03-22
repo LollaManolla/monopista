@@ -1,0 +1,26 @@
+// //-------------------------
+// //-------------------BLOCK TEASER blog article author title
+// //-------------------------
+
+
+
+
+.article-author-quote {
+  font-family: $blackjack;
+  font-size: 5.2rem;
+  letter-spacing: -0.05rem;
+  line-height: normal;
+  margin-top: -2.5rem;
+  @include breakpoint (tablet) {
+    font-size: 5.3rem;
+    margin-top: -2.9rem;
+    letter-spacing: -0.08rem;
+  }
+
+  @include breakpoint (phone) {
+    font-size: 7.2rem;
+    letter-spacing: -0.02rem;
+    line-height: 1;
+    margin-top: 0;
+  }
+}

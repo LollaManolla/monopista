@@ -1,0 +1,25 @@
+//-------------------------
+//-------------------BLOCK PUSH CONTENT
+//-------------------------
+
+
+
+&__content {
+	display: inline-block;
+	float: left;
+	position: relative;
+	border: solid 10px $white;
+	width: 25%;
+
+	@include breakpoint (toDesktop) {
+		width: 50%;
+	}
+
+	@include breakpoint (tablet) {
+		border: solid 5px $white;
+	}
+
+	@include breakpoint (phone) {
+		border: solid 5px $white;
+	}
+}

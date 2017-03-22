@@ -1,0 +1,30 @@
+//-------------------------
+//-------------  ARTICLE PAGES article content
+//-------------------------
+
+.article-main-content {
+
+  padding: 0 16.8rem;
+
+  p {
+    font-weight: lighter;
+    font-family: $baseFont;
+    color: $dimgray;
+    line-height: 2.2;
+    font-size: 1.8rem;
+  }
+
+  figure {
+    margin: 3rem auto;
+    text-align: center;
+    img {
+      margin: 0 auto;
+    }
+    figcaption {
+      font-family: $cormorant;
+      font-weight: 400;
+      font-size: 1.5rem
+    }
+  }
+
+}

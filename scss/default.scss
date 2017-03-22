@@ -1,0 +1,70 @@
+//------------------------------------------------------------------------------
+//   Import all styles
+//-----------------------------------------------------------------------------
+
+//------CORE
+// Core files prepare DOM by making HTML elements consistent across browsers
+// and removing built-in browser styling.
+@import 'core/all';
+
+//------MIXINS and functions
+@import 'lib/all';
+
+//------SETTINGS FOR PROJECT
+//------variable, breakpoints, typo
+@import 'settings/settings.breakpoints',
+		'settings/settings.colors',
+		'settings/settings.wrappers',
+		'settings/settings.links',
+		'settings/settings.paths',
+		'settings/settings.typography',
+		'settings/settings.global';
+
+//------ARTICLES
+@import 'articles/article-small/default';
+
+
+//------BLOCKS
+@import 'blocks/b-header/header',
+				'blocks/b-footer/footer',
+				'blocks/b-menu/default',
+				'blocks/b-social/default',
+				'blocks/b-mostread/default',
+				'blocks/b-teaser/product/default',
+				'blocks/b-teaser/article/default',
+				'blocks/b-teaser/blog/default',
+				'blocks/b-teaser/dossier/default',
+				'blocks/b-search/default',
+				'blocks/b-push/default',
+				'blocks/b-title/default',
+				'blocks/b-articles/default',
+				'blocks/b-coupdecoeur/default',
+				'blocks/b-dossier/default',
+				'blocks/b-shpheader/default',
+				'blocks/b-productShow/productSlider',
+				'blocks/b-tagheader/default',
+				'blocks/b-author/default';
+
+
+
+//------COMPONENTS
+@import 'components/c-menu/default',
+				'components/c-taglogo/default',
+				'components/c-search/default',
+				'components/c-button/default',
+				'components/c-linkfull/default',
+				'components/c-colorfull/default',
+				'components/c-blockquote/default',
+				'components/c-pagination/default';
+
+
+//------PAGES
+@import 'pages/staticPage',
+		'pages/error',
+		'pages/article/default';
+
+//------TRUMPS
+@import 'trumps/trumps.clearfix',
+				'trumps/trumps.hacks',
+				'trumps/trumps.ie',
+				'trumps/trumps.print';

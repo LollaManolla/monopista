@@ -1,0 +1,47 @@
+//-------------------------
+//-------------------BLOCK TITLE
+//-------------------------
+
+
+
+.b-title {
+	text-transform: uppercase;
+	font-family: $Helnuboldconde;
+
+	 line-height: 0.88;
+
+	 
+
+	&__full {
+		background-color: $verylightgrey;
+		color: $white;
+		display: inline-block;
+
+		letter-spacing: 0.4rem;
+		 padding: 0rem 0.82rem;
+		font-size: 7.4rem;
+	}
+	&__normal {
+		color: $verylightgrey;
+		display: block;
+		 letter-spacing: -0.25rem;
+
+		font-size: 6.5rem;
+	}
+
+	//colors
+
+}
+.b-title {
+@for $i from 1 to $tagLength {
+	$currentTag: nth($tagArray, $i);
+	&.#{$currentTag} {
+		.b-title__full {
+		background-color: colorFunc(tag, $currentTag);
+	}
+		.b-title__normal {
+			color: colorFunc(tag, $currentTag);
+		}
+	}
+}
+}

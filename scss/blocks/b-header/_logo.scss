@@ -1,0 +1,61 @@
+//-------------------------
+//-------------------HEADER  logo
+//-------------------------
+
+
+
+.b-logo {
+	position: relative;
+	z-index: 2;
+
+	display: inline-block;
+    width: 33.33%;
+	@include breakpoint (toDesktop){
+		text-align: center;
+		width: auto;
+		float: none;
+	}
+	@include breakpoint (phone){
+		    width: 80%;
+	}
+	.logo {
+		display: inline-block;
+		width: 100%;
+		&-img {
+		    width: 44.68%;
+			display: inline-block;
+			vertical-align: middle;
+			@include breakpoint (toDesktop){
+				width: auto;
+			}
+			@include breakpoint (phone){
+				width: 40%;
+			}
+
+		}
+		&-title {
+			display: inline-block;
+			width: 50%;
+			margin-left: 0.6rem;
+			vertical-align: middle;
+			font-style: italic;
+			font-size: 1.9rem;
+			font-size: 1.3195vw;
+			font-family: $cormorant;
+			color: $black;
+			@include breakpoint (bigDesktop){
+				font-size: 1.8rem;
+			}
+			@include breakpoint (toDesktop){
+				text-align: left;
+				font-size: 2.474vw;
+				width: initial;
+			}
+
+		}
+	}
+
+
+}
+@import "iconsearch",
+ 				"secondlogo";

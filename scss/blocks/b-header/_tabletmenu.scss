@@ -1,0 +1,64 @@
+.tabletMenu{
+	display: inline-block;
+    width: 66%;
+	@include breakpoint (toDesktop){
+	    position: fixed;
+		display: none;
+		width: auto;
+		opacity: 0;
+	    left: 0;
+	    right: 0;
+	    top: 0;
+	    height: 0;
+	    background-color: $white;
+		text-align: left;
+	}
+	&.menuOpen{
+		@include transition(all .3s ease-in);
+		height: 100vh;
+		opacity: 1;
+		z-index: 10;
+		display: block;
+		overflow-y: scroll;
+	}
+	.c-menu__item{
+		@include breakpoint (toDesktop){
+			display: block;
+			text-align: center;
+			margin: 6rem 0;
+			padding: 0;
+		}
+		a{
+			@include breakpoint (toDesktop){
+				font-size: 2.8rem;
+				font-weight: bold;
+			}
+		}
+	}
+	.logo-img-mobile{
+		display: none;
+		@include breakpoint (toDesktop){
+			display: inline-block;
+			vertical-align: middle;
+			width: 20%;
+			padding-left: 6rem;
+			padding-top: 6rem;
+		}
+		@include breakpoint (phone){
+			    width: 35%;
+		}
+	}
+	.logo-title-mobile{
+		display: none;
+		@include breakpoint (toDesktop){
+			display: inline-block;
+			vertical-align: middle;
+			font-family: $cormorant;
+			color: $black;
+			margin-left: 0.6rem;
+			font-size: 1.3rem;
+			font-style: italic;
+			padding-top: 6rem;
+		}
+	}
+}

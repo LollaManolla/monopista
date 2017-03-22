@@ -1,0 +1,142 @@
+//-------------------------
+//-------------------COMPONENT PAGINATION
+//-------------------------
+
+.pagination {
+	&__list {
+
+		&--first,
+		&--main,
+		&--last {
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		&--main {
+			padding: 0 3.5rem 0 5.5rem;
+			@include breakpoint (phone) {
+				vertical-align: middle;
+				padding: 0;
+			}
+		}
+
+		&--last {
+			@include breakpoint (phone) {
+				vertical-align: middle;
+			}
+		}
+
+		&--item {
+			display: inline-block;
+			font-weight: bold;
+			vertical-align: top;
+			@include breakpoint (phone) {
+				vertical-align: middle;
+			}
+
+			.first,
+			.last {
+				@include breakpoint (tablet) {
+					display: inline-block;
+					text-align: right;
+				}
+				span {
+					@include breakpoint (tablet) {
+						display: block;
+					}
+				}
+			}
+
+			.last {
+				@include breakpoint (tablet) {
+					text-align: left;
+				}
+			}
+
+			.prev {
+				@include breakpoint (tablet) {
+					display: inline-block;
+				}
+			}
+
+			a, .text {
+				color: $woodygray;
+				font-size: 1.4rem;
+
+				@include breakpoint (tablet) {
+					font-size: 2.4rem;
+				}
+				&.page {
+					font-size: 1.6rem;
+					padding: 0 2.2rem 0 0;
+
+					@include breakpoint (tablet) {
+						font-size: 3rem;
+						padding: 0 5rem 0 0;
+					}
+						@include breakpoint (phone) {
+					font-size: 3.9rem;
+					padding: 0;
+				}
+				}
+			}
+			.first,
+			.prev,
+			.next,
+			.last {
+				@include breakpoint (phone) {
+					display: none;
+				}
+			}
+			.first {
+				padding: 0 2.5rem 0 0;
+				@include breakpoint (tablet) {
+					padding: 0 4.5rem 0 0;
+				}
+			}
+			.next {
+				padding:0 1.7rem 0 0;
+				@include breakpoint (tablet) {
+					padding: 0 4.5rem 0 0;
+				}
+			}
+			.btn {
+				&-prev,
+				&-next {
+					position: absolute;
+					left:0;
+					top: 1.5rem;
+					font-family:$fontFontello ;
+					cursor: pointer;
+					font-size: 3rem;
+					.fontelloIcon {
+							color: $white;
+							padding: 1.1rem 1.6rem;
+							display: block;
+					}
+				}
+				&-next {
+					left: auto;
+					right: 0;
+				}
+			}
+			.text {
+				font-size: 3.9rem;
+				text-transform: uppercase;
+				padding-right:1rem;
+
+			}
+			.btn-prev,
+			.btn-next,
+			.text {
+				display: none;
+				@include breakpoint (phone) {
+					display: block;
+
+				}
+			}
+
+		}
+	}
+
+}

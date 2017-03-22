@@ -1,0 +1,19 @@
+//-------------------------
+//-------------------BLOCK SHP HEADER tag logo
+//-------------------------
+
+.c-taglogo {
+	display: block;
+	margin: 0 auto 2rem;
+	width: 14.33%;
+
+	@include breakpoint (tablet) {
+		width:15%;
+		margin: 0 auto 3rem;
+
+	}
+	@include breakpoint (phone) {
+		width:25%;
+		margin: 7.6rem auto 3rem;
+	}
+}

@@ -1,0 +1,33 @@
+//-------------------------
+//-------------------BLOCK DOSSIER c-btn
+//-------------------------
+
+.c-btn {
+  @include breakpoint (tablet) {
+    padding: 1.7rem 1rem;
+    font-size: 1.56rem;
+    font-weight: bold;
+  }
+
+  @include breakpoint (phone) {
+    font-size: 2.15rem;
+       padding: 2.3rem 1rem;
+  }
+
+  &--wrapper {
+    margin-left: 4.6rem;
+      max-width: 31%;
+      position: relative;
+      top: 2rem;
+    @include breakpoint (tablet) {
+      max-width: 47%;
+
+      margin-left:3rem;
+    }
+    @include breakpoint (phone) {
+      max-width: 56%;
+      margin-left: 0.5rem;
+    }
+
+  }
+}

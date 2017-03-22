@@ -1,0 +1,67 @@
+//-------------------------
+//-------------------COMPONENT MENU
+//-------------------------
+
+.c-menu{
+	margin-top: 1%;
+    &__item{
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        font-family: $baseFont;
+		display: inline-block;
+        padding: 0 4%;
+		position: relative;
+		@include transition(all .3s ease-in);
+		&:before{
+			display: block;
+			position: absolute;
+			top: -5rem;
+			left: 0;
+			right: 0;
+			bottom: -4.1rem;
+			content: '';
+			background-color: $lightgreen;
+			z-index: 0;
+			opacity: 0;
+			@include transition(all .3s ease-in);
+		}
+		&:hover{
+			&:before{
+				opacity: 1;
+			}
+		}
+        a{
+            color: $lightGray;
+			text-decoration: none;
+			z-index: 1;
+			position: relative;
+			@include transition(all .3s ease-in);
+			font-size: 0.9vw;
+			@include breakpoint (bigDesktop){
+				font-size: 1.3rem;
+			}
+        }
+    }
+	@import "submenu";
+}
+.hoverMask{
+	opacity: 0;
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    right: 0;
+    height: 7rem;
+    background: $lightgreen;
+    content: '';
+    z-index: 1;
+    @include transition(all .3s ease-in);
+}
+.c-menu__item:hover > a{
+	color: $white;
+	padding-bottom: 0.5rem;
+	border-bottom: 2px solid $white;
+}
+.c-menu__item:hover > .c-menu--submenu{
+	opacity: 1;
+	z-index: 12;
+}

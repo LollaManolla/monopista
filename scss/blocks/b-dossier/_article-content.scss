@@ -1,0 +1,41 @@
+//-------------------------
+//-------------------BLOCK DOSSIER wrapper
+//-------------------------
+
+.article-content {
+  color: $white;
+  bottom: 0;
+  height: 100%;
+  left: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  display: table;
+  vertical-align: top;
+    padding-top: 18.3rem;
+
+  @include breakpoint (tablet) {
+    padding-top:7.6rem;
+  }
+  @include breakpoint (phone) {
+padding-top: 9.8rem;
+  }
+
+
+  &-wrapper {
+    display: table-cell;
+    vertical-align: top;
+
+      padding-left: 12.8rem;
+
+      @include breakpoint (tablet) {
+          padding-left: 6rem;
+      }
+      @include breakpoint (phone) {
+      padding-left: 0.9rem;
+      }
+
+
+  }
+}

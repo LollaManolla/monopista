@@ -1,0 +1,38 @@
+//-------------------------
+//-------------------BLOCK SHP HEADER content
+//-------------------------
+
+
+
+&__content {
+	bottom: 0;
+	 display: table;
+	 height: 100%;
+	 left: 0;
+	 position: absolute;
+	 right: 0;
+	 top: 0;
+	 vertical-align: middle;
+	 width: 100%;
+	 z-index: 3;
+
+
+}
+&__contentinner {
+	display: table-cell;
+
+     vertical-align: bottom;
+		 	padding-bottom: 6.2rem;
+
+	@include breakpoint (tablet) {
+		 	padding-bottom: 4rem;
+		}
+
+		@include breakpoint (phone) {
+				padding-bottom: 0;
+				display: block;
+			}
+
+
+
+}

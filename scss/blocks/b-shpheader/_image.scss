@@ -1,0 +1,36 @@
+//-------------------------
+//-------------------BLOCK SHP HEADER img
+//-------------------------
+
+@for $i from 1 to $tagLength {
+	$currentTag: nth($tagArray, $i);
+	&.#{$currentTag} {
+		picture:before {
+			background-color: colorFunc(tag, $currentTag);
+	    content: "";
+	    display: block;
+	    height: 100%;
+	    left: 0;
+	    opacity: 0.8;
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	    width: 100%;
+	    z-index: 3;
+		}
+	}
+}
+
+picture {
+	position: relative;
+	display: block;
+
+	img {
+
+
+	    max-width: none;
+	    position: relative;
+	    width: 100%;
+
+	}
+}

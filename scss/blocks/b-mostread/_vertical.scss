@@ -1,0 +1,100 @@
+//-------------------------
+//-------------------BLOCK MOST READ VERTICAL
+//-------------------------
+
+&--vertical {
+ margin-left: 2.3rem;
+  position: relative;
+  margin-bottom: 6.8rem;
+  @include breakpoint (tablet) {
+    margin-left: 10.2rem;
+    margin-bottom: 3.3rem;
+  }
+
+  @include breakpoint (phone) {
+    margin-left: 3.5rem;
+    margin-bottom: 6.3rem;
+  }
+
+  .b-title {
+    position: absolute;
+    left: 0;
+    top: 0.8rem;
+    &__full,
+    &__normal {
+      font-size: 4.741rem;
+      letter-spacing: normal;
+      padding: 0;
+      line-height: 0.85;
+
+      @include breakpoint (tablet) {
+        font-size: 6.2rem;
+        line-height: 0.85;
+      }
+    }
+  }
+
+  .mostread-slider {
+    margin-left:  23rem;
+    @include breakpoint (tablet) {
+      margin-left: 28rem;
+    }
+
+
+    &__item {
+      display: inline-block;
+      vertical-align: top;
+      margin-bottom: 4rem;
+      //width:29.666%; //this one will shrink
+      width:33.3rem; //this one will drop down
+      outline: none;
+
+  @include breakpoint (toDesktop) {
+      display: inline-block;
+         float: none;
+
+       }
+
+
+       @include breakpoint (tablet) {
+         width: 317px;
+       }
+
+      @include breakpoint (phone) {
+        width: 330px;
+      }
+    }
+
+    .article-small {
+      display: block;
+
+      @include breakpoint (toDesktop) {
+        display: inline-block;
+  width: 42rem;
+      }
+
+      &__img {
+        display: block;
+        float: left;
+        width: 43.930%;
+        @include breakpoint (tablet) {
+          width: 44%;
+        }
+        @include breakpoint (phone) {
+          width: 26.33%;
+        }
+      }
+      &__content {
+        display: inline-block;
+        padding:0 1rem 0 2.1rem;
+        margin: 0.3rem 0 0;
+
+        width: 50%;
+
+        @include breakpoint (tablet) {
+          padding:0 0rem 0 1.4rem;
+        }
+      }
+    }
+  }
+}

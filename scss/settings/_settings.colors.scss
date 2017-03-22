@@ -1,0 +1,148 @@
+//-------------------------
+//-------VARIABLES | COLORS
+//-------------------------
+$black      	  :#000;
+$white      	  :#FFF;
+$red            :#ff252c;
+$lightgreen 	  :#94EC9E;
+$coralcandy 	  :#F0CBC5;
+$givry 			    :#E4D1B0;
+$icecold 		    :#ABE5DC;
+$verylightgrey	:#C8C8C8;
+$grannyapple 	  :#C1F1C6;
+$remy 			    :#F1D9D6;
+$jaggedice 		  :#C6EAE4;
+$dovegray       :#6a6a6a;
+$grey			      :#777777;
+$greyoson       :#868686;
+$lightGray      :#a29e9e;
+$headerGray     :#e4e4e4;
+$headerGrayDark :#cacaca;
+$woodygray      :#4E4746;
+$dimgray        :#6F6F6F;
+
+$colors: (
+    // white    : #FFF,
+    // container: #1E1E1E,
+    // logo     : #FFF,
+	// cookie   : #AFAFAF,
+	//
+	// article: (
+	// 	background    : #FFF,
+	// 	title         : #000,
+	// 	copy-text     : #989898,
+	// 	emoji         : #5E5E5E,
+	// 	iteration     : #616161,
+	// 	iterationCur  : #FFF,
+	// 	sponsored     : #FFF,
+	// 	sponsoredHover: #000,
+	// 	diaporama     : #000
+	// ),
+	//
+	// brands: (
+    //     facebook : #3B5998,
+    //     twitter  : #1DA1F2,
+    //     whatsapp : #43D854,
+    //     youtube  : #CD201F,
+	// 	messenger: #0084FF,
+	// 	shuffle  : #000000
+    // ),
+	//
+	// error: (
+	// 	title: #72D894,
+	// 	link : #72D894
+	// ),
+	//
+	// flag: (
+	// 	dateHover     : #FFF,
+	// 	title         : #000,
+	// 	titleRelated  : #FFF,
+	// 	sponsored     : #FFF,
+	// 	sponsoredHover: #000
+	// ),
+	//
+	// header: (
+	// 	staticPages     : #FFF,
+	// 	staticPageMobile: #000,
+	// 	searchPage      : #000,
+	// 	searchPageActive: #FFF,
+	// 	baseline: #FFF
+	// ),
+	//
+	// match: (
+	// 	title  : #FFF,
+	// 	button : #FFF,
+	// 	mask   : #1E1E1E,
+	// 	nextBtn: #000
+	// ),
+	//
+	// search: (
+    //     background: #1E1E1E,
+    //     text      : #FFF
+    // ),
+	//
+	// searchPage: (
+	// 	border: #110F0F,
+	// 	text  : #1B1717,
+	// 	title : #72D894,
+	// 	result: #291011
+	// ),
+	//
+    // sidebar: (
+    //     nav        : #7C7C7C,
+    //     navMobile  : #FFF,
+    //     footer     : #909090,
+    //     border     : #2C2C2C,
+    //     footerHover: #fff,
+    //     social     : #7C7A7A,
+    //     hover      : #FFF,
+    //     trigger    : #FFF
+    // ),
+	//
+    // slider: (
+    //     title     : #FFF,
+    //     intro     : #808080,
+    //     iteration : #616161,
+    //     background: #1E1E1E,
+    //     trigger   : #000
+    // ),
+	//
+	// static: (
+	// 	title             : #FFF,
+ //  	background        : #72D894,
+    // manifesto-content : #06421a,
+	// 	shadow            : #1E1E1E
+	// ),
+	//
+	// related: (
+	// 	dots: #FFF
+	// ),
+
+	tag: (
+	food			:#94EC9E,
+	beauty			:#F0CBC5,
+	deco			:#E4D1B0,
+	fashion		:#ABE5DC
+	)
+
+	// tagPage: (
+	// 	title: #FFF
+	// ),
+	//
+	// viewer: (
+	// 	date : #000,
+	// 	title: #FFF
+	// )
+);
+
+// Variables used in the @for loop for different tag colors
+// Variables used in the @for loop for different brand colors
+$tagArray : food, beauty, deco, fashion;
+$tagLength: length($tagArray) + 1;
+
+// $tagArray : illusions, geekeries, games, kawaii, motivational;
+// $tagLength: length($tagArray) + 1;
+//
+// // Variables used in the @for loop for different brand colors
+// $brandArray : facebook, twitter, whatsapp, youtube, messenger, shuffle;
+// $brandLength: length($brandArray) + 1;

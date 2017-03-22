@@ -1,0 +1,55 @@
+//-------------------------
+//-------------------BLOCK MOST READ
+//-------------------------
+
+.b-mostread {
+
+  @extend .clearfix;
+  clear: both; // this is probably temp
+  position: relative;
+
+  @import "vertical";
+  @import "horizontal";
+
+  .article-title {
+    font-size: 2.4rem;
+    letter-spacing: -0.08rem;
+   line-height: 1.12;
+   margin-top: 0.5rem;
+   font-weight: 600;
+
+   @include breakpoint (tablet) {
+     font-size: 2.94rem;
+     letter-spacing:-0.13rem;
+     margin-top: 0.8rem;
+   }
+  }
+
+  .c-taglogo {
+    display: inline;
+    position: relative;
+    top: auto;
+     transform: none;
+
+     font-size: 1.4rem;
+     font-weight: 800;
+
+     @include breakpoint (tablet) {
+       font-size: 1.87rem;
+     }
+
+     @include breakpoint (phone) {
+       font-size: 1.7rem;
+     }
+
+    @for $i from 1 to $tagLength {
+      $currentTag: nth($tagArray, $i);
+      &--#{$currentTag} {
+        display: inline-block;
+        &:first-letter {
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}

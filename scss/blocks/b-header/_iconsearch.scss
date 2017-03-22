@@ -1,0 +1,21 @@
+.icon-search{
+	display: block;
+	color: #000;
+	font-size: 1.7rem;
+	font-size: 1.1806vw;
+	cursor: pointer;
+	@include breakpoint (toDesktop){
+		display: inline-block;
+		color: $lightGray;
+		font-size: 1.7rem;
+		font-size: 1.1806vw;
+		font-size: 2.8rem;
+		cursor: pointer;
+		float: right;
+	    padding-right: 2.5rem;
+	    margin-top: 0.4rem;
+	}
+	@include breakpoint (phone){
+		padding-right: 1rem;
+	}
+}

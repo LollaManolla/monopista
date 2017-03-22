@@ -1,0 +1,128 @@
+//-------------------------
+//----------------WRAPPERS
+//-------------------------
+
+
+// .maxWidth,
+.main-content {
+	@extend .clearfix;
+	max-width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+	@include breakpoint (toDesktop) {
+		max-width: none;
+	}
+}
+
+// .withPadding {
+// 	@extend .clearfix;
+// 	//max-width: 1320px;
+// 	margin-left: auto;
+// 	margin-right: auto;
+// //	background-color: purple;
+// padding: 0 6rem;
+// 	@include breakpoint (tablet) {
+// 		//max-width: 610px;
+// 	}
+// 	@include breakpoint (phone) {
+// 		//max-width: none;
+// 	}
+// }
+
+// .with-DoublePadding { //use it with max-width ispred
+// 	padding: 0 14.36rem;
+// 	@include breakpoint (tablet) {
+// 		padding: 0 10.2rem;
+// 	}
+// 	@include breakpoint (phone) {
+// 		padding: 0 6.5rem;
+// 	}
+// }
+
+// .withDoublePadding {
+// 	@extend .clearfix;
+// 	max-width: 1150px;
+// 	padding: 0 14.36rem;
+// 	margin-left: auto;
+// 	margin-right: auto;
+// //	background-color: gold;
+// 	@include breakpoint (tablet) {
+// 		max-width: 610px;
+// 		padding: 0 14.36rem;
+// 	}
+// 	@include breakpoint (phone) {
+// 		max-width: 510px;
+// 		padding: 0 14.36rem;
+// 	}
+// }
+
+.two-col {
+	float: left;
+	padding-left: 14.4rem;
+	width: 55.111%;
+	margin-top: 7.6rem;
+	 @extend .clearfix;
+
+	@include breakpoint (toDesktop) {
+		width: 100%;
+		float: none;
+
+
+	}
+	@include breakpoint (tablet) {
+		padding: 0 10.2rem;
+		margin-bottom: 7.2rem;
+	}
+
+	@include breakpoint (phone) {
+		padding: 0 6.5rem;
+		margin-bottom: 10rem;
+	}
+}
+
+.one-col {
+	padding-right: 14.3rem;
+	width: 44.666%;
+float: right;
+padding-left: 1.7rem;
+margin-top: 2rem;
+@include breakpoint (tablet) {
+	padding: 0 10.5rem;
+	width: 100%;
+	float: none;
+}
+
+
+@include breakpoint (phone) {
+	padding: 0;
+	width: 100%;
+	float: none;
+}
+
+}
+
+.full-col {
+	 clear: both;
+ //  margin-left: auto;
+ // margin-right: auto;
+ padding: 0 6rem;
+
+ @include breakpoint (toDesktop) {
+	 padding: 0;
+ }
+ &.tab-pad {
+	 @include breakpoint (tablet) {
+		 padding: 0 10.5rem;
+	 }
+ }
+ &.all-pad {
+	  padding: 0 6rem;
+	@include breakpoint (tablet) {
+		padding: 0 10.5rem;
+	}
+	@include breakpoint (phone) {
+			padding: 0 6.5rem;
+	}
+ }
+}

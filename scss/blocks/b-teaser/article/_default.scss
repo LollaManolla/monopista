@@ -1,0 +1,30 @@
+// //-------------------------
+// //-------------------BLOCK TEASER ARTICLE
+// //-------------------------
+
+.b-teaser-article{
+  @extend .clearfix;
+  position: relative;
+  margin-bottom: 8rem;
+
+  @include breakpoint (toDesktop) {
+    overflow: hidden;
+  }
+
+  @include breakpoint (tablet) {
+  margin-bottom: 6.6rem;
+  }
+
+  @include breakpoint (phone) {
+    margin-bottom: 5rem;
+  }
+
+  .article {
+    @import "image",
+            "article-content";
+  }
+
+  @import "article-title",
+          "article-intro";
+
+}

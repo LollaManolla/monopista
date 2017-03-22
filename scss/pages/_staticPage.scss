@@ -1,0 +1,66 @@
+//-------------------------
+//-------------STATIC PAGE
+//-------------------------
+
+.staticPage {
+	background-color: $white;
+	text-align: center;
+	z-index: 1;
+	&__title {
+		display: inline-block;
+		margin-top: 6.5rem;
+		margin-bottom: 4rem;
+		font-family: $Helnuboldconde;
+		font-size: 8.3rem;
+		color: $verylightgrey;
+		text-transform: uppercase;
+		text-align: center;
+		@include breakpoint(tablet) {
+			margin-bottom: 10rem;
+			font-size: 10.3rem;
+		}
+		@include breakpoint(phone) {
+			margin-bottom: 7rem;
+			font-size: 6.3rem;
+		}
+		.firstWord {
+			display: block;
+			background-color: $verylightgrey;
+			font-size: 6.8rem;
+			line-height: 0.9;
+			color: $white;
+			@include breakpoint(tablet) {
+				font-size: 8.8rem;
+			}
+			@include breakpoint(phone) {
+				font-size: 5rem;
+			}
+		}
+	}
+	&__content {
+		width: 70%;
+		margin: 0 auto 6rem;
+		text-align: left;
+		@include breakpoint(tablet) {
+			width: 78%;
+		}
+		h2,h3,h4 {
+			font-family: $cormorant;
+			font-size: 3rem;
+			margin-bottom: 4rem;	
+		}
+		p,span,a {
+			font-family: $baseFont;
+			font-size: 1.6rem;
+			line-height: 1.7;
+			@include breakpoint(tablet) {
+				font-size: 2.6rem;
+				line-height: 2.5;
+			}
+			@include breakpoint(phone) {
+				font-size: 2.6rem;
+				line-height: 2.5;
+			}
+		}
+	}
+}

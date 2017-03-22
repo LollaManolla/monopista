@@ -1,0 +1,16 @@
+// //-------------------------
+// //-------------------BLOCK TEASER blog article author
+// //-------------------------
+
+.article-author {
+  font-family: $helnuheavy;
+  text-transform: uppercase;
+  font-size: 6rem;
+  line-height: normal;
+  @include breakpoint (tablet) {
+    font-size:6rem;
+  }
+  @include breakpoint (phone) {
+    font-size: 7.8rem;
+  }
+}

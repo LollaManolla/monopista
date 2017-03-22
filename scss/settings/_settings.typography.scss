@@ -1,0 +1,91 @@
+//-------------------------
+//---------------TYPOGRAPHY
+//-------------------------
+
+//------FONT-FACE
+@include fontFaceExternal (Helnubold, /helveticaneue-boldcondobl-webfont, null, null, eot woff ttf svg);
+@include fontFaceExternal (Helnuboldconde, /helveticaneue-boldcond-webfont, null, null, eot woff ttf svg);
+@include fontFace (Helnuheavy, /HelnuheavyCond, null, null, eot woff ttf svg);
+@include fontFace (blackjack, /blackjack, null, null, eot woff ttf svg);
+@include fontFace (fontello, /fontello, null, null, eot woff ttf svg);
+
+
+
+//------FONT SIZES CALCULATION
+// DO NOT CHNAGE BASE FONT SIZE, ITS EASIER FOR CALCULATION
+// CHANGE FONT-SIZE USING THIS FORMULA
+// A = 10  (font size we always use, just change resolution)
+// B = 768 (resolution we are looking at in the desing)
+// X = (A / B) * 100
+
+//------DIMENSIONS
+$baseFontSize: 10; // DO NOT CHANGE THIS
+
+html {
+    $fontSizePX: $baseFontSize + 'px';
+    overflow-x: hidden;
+    font-size  : $fontSizePX;
+	//change this part
+    @include breakpoint (desktop) {
+        font-size: 0.694444444444444vw;//1440
+    }
+    @include breakpoint (tablet) {
+        font-size: 0.9765625vw;//1024 tablet
+    }
+    @include breakpoint (phone) {
+        font-size: 1.303780964797914vw;//767
+    }
+    @include breakpoint (wideScreen) {
+        font-size:  0.694444444444444vw;
+    }
+    @include breakpoint (bigDesktop) {
+        font-size: 10px;
+    }
+}
+body{
+    overflow-x: hidden;
+}
+
+//------FONTS
+
+
+$fontDefault    : Arial, Helvetica, Tahoma, sans-serif;
+$baseFont       :'Open Sans', $fontDefault;
+$helnubold     	: 'Helnubold', $fontDefault;
+$Helnuboldconde : 'Helnuboldconde', $fontDefault;
+$helnuheavy     : 'Helnuheavy', $fontDefault;
+$cormorant		:'Cormorant', serif;
+$opensanscond	:'Open Sans Condensed', sans-serif;
+$blackjack		:'blackjack', sans-serif;
+$fontFontello   : "fontello";
+
+
+
+
+//------GLOBAL FONT SETTINGS must be here
+body {
+    font-size: 100%;
+    font-family: $baseFont;
+}
+
+
+
+h1 {
+	font-family: $helnuheavy ;
+	font-size: 3rem;
+}
+
+h2 {
+	font-family: $cormorant ;
+	font-size: 3rem;
+}
+
+h3 {
+	font-family: $helnubold ;
+	font-size: 3rem;
+}
+
+h4 {
+	font-family: $blackjack ;
+	font-size: 3rem;
+}

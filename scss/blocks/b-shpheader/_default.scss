@@ -1,0 +1,32 @@
+//-------------------------
+//-------------------BLOCK SHP HEADER
+//-------------------------
+.b-shpheader {
+
+	position: relative;
+	color: $white;
+	text-align: center;
+
+		height: 0;
+    overflow: hidden;
+    padding-bottom: 20%;
+
+		@include breakpoint (tablet) {
+			 padding-bottom: 34.33%;
+		}
+
+		@include breakpoint (phone) {
+			 padding-bottom: 87%;
+			 overflow: visible;
+		}
+
+@import "image",
+				"wrapper",
+				"content",
+				"c-logo",
+				"article-intro";
+
+
+
+
+}

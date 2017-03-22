@@ -1,0 +1,23 @@
+//-------------------------
+//-------------------BLOCK TAG HEADER article intro
+//-------------------------
+
+
+.article-intro {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.5;
+  display: block;
+  @include breakpoint (tablet) {
+    font-size: 2.85rem;
+    letter-spacing: -0.09rem;
+    line-height: 2.3;
+    margin-top: -3.8rem;
+  }
+  @include breakpoint (phone) {
+    font-size: 4rem;
+    letter-spacing: -0.07rem;
+    line-height: 1.5;
+    margin-top: -1.7rem;
+  }
+}

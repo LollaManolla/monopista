@@ -1,0 +1,12 @@
+// //-------------------------
+// //-------------------BLOCK TEASER article tag
+// //-------------------------
+
+&.tag {
+  @for $i from 1 to $tagLength {
+    $currentTag: nth($tagArray, $i);
+    &--#{$currentTag} {
+      background-color: colorFunc(tag, $currentTag);
+    }
+  }
+}

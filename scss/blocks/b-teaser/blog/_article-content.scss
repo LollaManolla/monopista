@@ -1,0 +1,40 @@
+// //-------------------------
+// //-------------------BLOCK TEASER blog article-content
+// //-------------------------
+
+.article-content {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  display: table;
+  vertical-align: top;
+  z-index: 1;
+  @include breakpoint (tablet) {
+    left: 0;
+    right: auto;
+    width: 52%;
+  }
+  @include breakpoint (phone) {
+    left: 0;
+    right: auto;
+    width: 52%;
+  }
+  &-wrapper {
+    display: table-cell;
+    vertical-align: top;
+    padding: 9% 0;
+
+
+
+    @include breakpoint (tablet) {
+      padding: 9% 0 0 10.5%;
+    }
+    @include breakpoint (phone) {
+      padding: 33% 0 0 11%;
+    }
+  }
+}

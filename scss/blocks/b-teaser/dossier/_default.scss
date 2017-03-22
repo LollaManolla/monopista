@@ -1,0 +1,26 @@
+//-------------------------
+//-------------------BLOCK TEASER DOSSIER
+//-------------------------
+
+.b-teaser-dossier {
+	@extend .clearfix;
+	position: relative;
+	margin-bottom: 5rem;
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 123%;
+	@include breakpoint (tablet) {
+		margin-bottom: 6.8rem;
+		padding-bottom:60.222%;
+	}
+	@include breakpoint (phone) {
+		padding-bottom:66%;
+		margin-bottom: 5rem;
+	}
+	@import "image",
+					"article-content",
+					"block-title",
+					"article-title",
+					"article-intro",
+					"c-btn";
+}

@@ -1,0 +1,33 @@
+//-------------------------
+//-------------------COMPONENT BLOCKQUOTE text
+//-------------------------
+
+
+&__text {
+	display: block;
+	width: 57.333%;
+	float: right;
+	font-size: 6.22rem;
+	font-weight: 800;
+	letter-spacing: -0.25rem;
+	position: relative;
+	margin-bottom: 2.2rem;
+&:before {
+	content: "\201c";
+	font-size: 19.8rem;
+	font-family: $cormorant	;
+	position: absolute;
+	left: -8.6rem;
+top: -4.6rem;
+
+}
+&:after {
+content: "\201e";
+		font-size: 13.4rem;
+	font-family: $cormorant	;
+	position: absolute;
+	right: 8.2rem;
+	bottom: 0.15rem;
+}
+
+}

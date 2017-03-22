@@ -1,0 +1,26 @@
+// //-------------------------
+// //-------------------BLOCK TEASER article image
+// //-------------------------
+
+&__img {
+  position: relative;
+  @include breakpoint (toDesktop) {
+    float: left;
+  }
+
+  @include breakpoint (tablet) {
+    width: 72%;
+    left: -10%;
+  }
+
+  @include breakpoint (phone) {
+    width: 80%;
+    left: -15%;
+  }
+
+  img {
+    height: auto;
+    max-width: none;
+    width: 100%;
+  }
+}

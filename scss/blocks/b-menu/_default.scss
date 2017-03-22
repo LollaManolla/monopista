@@ -1,0 +1,16 @@
+//-------------------------
+//-------------------BLOCK MENU
+//-------------------------
+
+.b-menu  {
+
+		display: inline-block;
+		vertical-align: middle;
+		width: 40%;
+		@include breakpoint (toDesktop){
+			display: block;
+			vertical-align: middle;
+			width: 100%;
+			margin-top: 25rem;
+		}
+}

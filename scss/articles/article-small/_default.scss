@@ -1,0 +1,39 @@
+//-------------------------
+//-------------------ARTICLE SMALL
+//-------------------------
+.article-small {
+	display: inline-block;
+	position: relative;
+
+	&__img {
+		position: relative;
+		display: block;
+		img {
+			width: 100%;
+			display: block;
+		}
+	}
+	
+	//colors
+	@for $i from 1 to $tagLength {
+		$currentTag: nth($tagArray, $i);
+		&.#{$currentTag} {
+
+			.article-small__img:hover{
+				.c-colorfull {
+					background-color: colorFunc(tag, $currentTag);
+					opacity: 0.8;
+				}
+			}
+
+			.article-title a:hover {
+				color: colorFunc(tag, $currentTag);
+			}
+		}
+
+	}
+
+	@import "content",
+					"logo";
+
+}

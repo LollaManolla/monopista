@@ -1,0 +1,15 @@
+//-------------------------
+//-------------------COMPONENT BLOCKQUOTE
+//-------------------------
+
+
+.c-blockquote {
+	@extend .clearfix;
+	font-family: $cormorant	;
+	margin: 6rem 0 6.9rem 0;
+
+
+
+	@import "icon",
+	"text";
+}

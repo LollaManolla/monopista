@@ -1,0 +1,53 @@
+//-------------------------
+//-------------------COMPONENT TAG LOGO
+//-------------------------
+
+.c-taglogo  {
+	font-family: $cormorant;
+	color: $black;
+	z-index: 3;
+	color: $dovegray;
+	@for $i from 1 to $tagLength {
+		$currentTag: nth($tagArray, $i);
+		&--#{$currentTag} {
+			color: colorFunc(tag, $currentTag);
+			display: block;
+
+
+			// background-color: $white;
+			// color: $black;
+			// text-decoration: none;
+
+
+			// .logo-head {
+			// 	display: block;
+			// 	text-transform: uppercase;
+			// 	color: $grey;
+			// 	font-family:$opensanscond;
+			// 	padding:0.75rem 0.2rem 0.8rem 0.35rem
+			// }
+
+			// .logo-border {
+			// 	border-style:solid;
+			// 	border-width:0.28rem;
+			// 	font-family: $helnubold;
+			// 	color: colorFunc(tag, $currentTag);
+			// 	border-color:colorFunc(tag, $currentTag);
+			// }
+
+			// .logo-tag {
+			// 	display: block;
+			// 	font-family: $opensanscond;
+			//
+			// 	text-transform: uppercase;
+			// 	background-color:colorFunc(tag, $currentTag);
+			// 	color: $white;
+			// 	text-align: center;
+			// 	letter-spacing: -0.2rem;
+			// }
+
+
+
+		}
+	}
+}

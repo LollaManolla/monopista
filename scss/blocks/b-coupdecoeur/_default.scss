@@ -1,0 +1,30 @@
+//-------------------------
+//-------------------BLOCK COUP DE COEUR
+//-------------------------
+
+.b-coupdecoeur {
+	@extend .clearfix;
+	position: relative;
+	margin-bottom: 8.3rem;
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 50.444%;
+	@include breakpoint (tablet) {
+		margin-bottom: 6.5rem;
+		padding-bottom:60%;
+	}
+	@include breakpoint (phone) {
+		padding-bottom:66%;
+		margin-bottom: 7rem;
+	}
+	@for $i from 1 to $tagLength {
+		$currentTag: nth($tagArray, $i);
+		&.#{$currentTag} {
+			background-color: colorFunc(tag, $currentTag);
+		}
+	}
+	@import "article-content",
+	"article-intro",
+	"product-img",
+	"static-title";
+}

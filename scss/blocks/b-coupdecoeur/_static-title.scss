@@ -1,0 +1,21 @@
+//-------------------------
+//-------------------BLOCK COUP DE COEUR static title image
+//-------------------------
+
+
+&__static-title {
+	position: relative;
+	max-width: 100%;
+	z-index: 2;
+	top: -2rem;
+	left: 3.5rem;
+	@include breakpoint (tablet) {
+		left: 4rem;
+		max-width: 37%;
+		top: auto;
+	}
+	@include breakpoint (phone) {
+		max-width: 46%;
+		top: auto;
+	}
+}

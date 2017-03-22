@@ -1,0 +1,14 @@
+// //-------------------------
+// //-------------------BLOCK TEASER article intro
+// //-------------------------
+
+.article-intro{
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding: 0 10.55rem 3.5rem;
+  color: $black;
+  display: block;
+  @include breakpoint (toDesktop){
+    display: none;
+  }
+}

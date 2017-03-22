@@ -1,0 +1,12 @@
+//-------------------------
+//-------------------ARTICLE SMALL logo
+//-------------------------
+
+
+.c-taglogo {
+	 @include vertical-align();
+	 display: inline-block;
+	 .logo-tag {
+		 font-size: 3rem;
+	 }
+}

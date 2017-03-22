@@ -1,0 +1,31 @@
+// //-------------------------
+// //-------------------BLOCK TEASER article arrow
+// //-------------------------
+
+
+
+&__arrow {
+  @include centerer;
+  position: absolute;
+  top: -0.5rem;
+  left: 52%;
+
+
+  @include breakpoint (toDesktop) {
+    left: -2rem;
+    @include vertical-align();
+    position: absolute;
+  }
+
+  img {
+
+    @include breakpoint (toDesktop) {
+      width: 64%;
+      max-width: none;
+
+      -ms-transform: rotate(-76deg);
+      -webkit-transform: rotate(-76deg);
+      transform: rotate(-76deg);
+    }
+  }
+}

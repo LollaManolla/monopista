@@ -1,0 +1,23 @@
+// //-------------------------
+// //-------------------BLOCK TEASER article wrapper
+// //-------------------------
+
+&-wrapper {
+
+  position: relative;
+  padding: 7rem 0 3rem 0;
+  width: 100%;
+
+
+  @include breakpoint (tablet) {
+    @include vertical-align();
+
+  }
+
+  @include breakpoint (phone) {
+
+   @include vertical-align();
+
+  }
+
+}

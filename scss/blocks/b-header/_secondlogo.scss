@@ -1,0 +1,40 @@
+.b-secondLogo{
+	border: 2px solid $headerGrayDark;
+	padding: 1.2rem;
+	display: inline-block;
+	font-size: 1.1rem;
+    width: 31%;
+	@include breakpoint (toDesktop){
+		font-size: 1.1rem;
+	    width: 34.5rem;
+	    margin: 6rem auto;
+	    text-align: center;
+		display: block;
+	}
+	&__black{
+		color: $black;
+		font-family: $baseFont;
+		font-weight: bold;
+		font-size: 1.1rem;
+		font-size: 0.7639vw;
+		@include breakpoint (bigDesktop){
+			font-size: 1.1rem;
+		}
+		@include breakpoint (toDesktop){
+			font-size: 1.4rem;
+		}
+	}
+	&__red{
+		color: $red;
+		font-family: $baseFont;
+		font-size: 1.3rem;
+		font-size: 0.9233vw;
+		text-transform: uppercase;
+		@include breakpoint (bigDesktop){
+			font-size: 1.3rem;
+		}
+		@include breakpoint (toDesktop){
+			font-size: 1.8rem;
+		}
+	}
+}
