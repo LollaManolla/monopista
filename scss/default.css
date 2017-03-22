@@ -825,6 +825,17 @@ h4 {
   display: block !important;
 }
 
+.normalHeader {
+  background-color: #FFF;
+  border-bottom: 1px solid black;
+  max-width: none;
+  padding: 3rem 12.5%;
+}
+
+.normalHeader ~ .header-mask {
+  display: none !important;
+}
+
 .tabletMenu {
   display: inline-block;
   width: 66%;
