@@ -3,7 +3,8 @@
 //-------------------------
 
 .article-intro{
-margin-top: 12.3rem;
+margin-top:calc(80% - 511px);//459 kad je jedna title 523 kad je u dve linije
+// margin-top: 5.8rem;
   padding-inline-start: 10.7rem;
   padding-inline-end: 16rem;
 }

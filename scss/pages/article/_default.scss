@@ -9,41 +9,42 @@
 
 
   @import
-        "common/article-main-img",
+  "common/article-main-img",
   "common/taglogo",
-    "common/article-header",
+  "common/article-header",
   "common/article-title",
+  "common/article-subtitle",
   "common/article-publish",
   "common/article-intro",
   "common/article-main-content",
-    "common/article-video",
-        "common/diaporama",
-      "common/article-footer";
+  "common/article-video",
+  "common/diaporama",
+  "common/article-footer";
 
-//portrait
-&--portrait {
-  @import  "portrait/article-main-img",
-    "portrait/article-intro",
-  "portrait/subtitle",
-  "portrait/diaporama";
-}
+  //portrait
+  &--portrait {
+    @import  "portrait/article-main-img",
+    "portrait/article-intro";
+  }
 
-&--landscape {
-  @import   "landscape/article-main-img",
-   "landscape/article-title",
+  &--landscape {
+    @import   "landscape/article-main-img",
+    "landscape/article-intro",
     "landscape/b-author",
-    "landscape/diaporama",
-"landscape/article-intro",
-  "landscape/subtitle";
-}
-&--recipes {
-  @import   "recipes/article-main-img",
-  "recipes/article-title",
-    "recipes/b-author",
-    "recipes/diaporama",
+    "landscape/article-title",
+    "landscape/article-main-content",
+    "landscape/diaporama";
+  }
+
+  &--recipes {
+    @import   "recipes/article-main-img",
     "recipes/article-intro",
-  "recipes/subtitle";
-}
+    "recipes/b-author",
+    "recipes/article-title",
+    "recipes/article-subtitle",
+    "recipes/article-main-content",
+    "recipes/diaporama";
+  }
 
 
 

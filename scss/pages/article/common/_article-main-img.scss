@@ -3,6 +3,7 @@
 //-------------------------
 
 .article-main-img {
+    @extend .clearfix;
   float: right;
   margin-top: 2.2rem;
   padding-left: 1rem;

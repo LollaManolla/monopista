@@ -3,8 +3,23 @@
 //-------------------------
 
 .b-author {
-&--small {
-  float: none;
-  padding-bottom: 16.100%;
-}
+  &--small {
+    //float: none;
+    padding-bottom: 16.222%;
+    width: 21.6666%;
+    margin-bottom: 0;
+    img {
+      left:33%;
+      transform: translateX(-33%);
+    }
+    .article-content {
+      left: -2.8rem;
+      vertical-align: top;
+
+      &-wrapper {
+        padding: 4rem 0 1.3rem 0;
+        vertical-align: top;
+      }
+    }
+  }
 }
