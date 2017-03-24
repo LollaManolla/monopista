@@ -16,6 +16,7 @@
 
   @include breakpoint (tablet) {
     vertical-align: top;
+    left: -2rem;
   }
   @include breakpoint (phone) {
   vertical-align: top;
@@ -32,7 +33,7 @@
 
     @include breakpoint (tablet) {
     vertical-align: top;
-    padding: 2.4rem 0 1.3rem 0;
+    padding: 5rem 0 1.3rem 0;
 
     }
 

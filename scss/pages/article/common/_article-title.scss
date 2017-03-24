@@ -1,5 +1,5 @@
 //-------------------------
-//-------------  ARTICLE PAGES article title
+//-------------  ARTICLE PAGES article title for all pages
 //-------------------------
 
 .article-title {
@@ -8,12 +8,23 @@
   position: relative;
   font-size: 5rem;
   padding-left: 2.2rem;
+
+  @include breakpoint (tablet) {
+    font-size: 6.7rem;
+    padding-left: 3rem;
+    line-height: 1.15;
+    max-width: 80%;
+  }
+
   &:before {
     height: 88.800%;
     position: absolute;
     left: -0.05rem;
     top: 0.9rem;
     bottom: 0;
+  @include breakpoint (tablet) {
+    top: 1.5rem;
   }
 
+  }
 }

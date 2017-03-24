@@ -7,11 +7,18 @@
 		font-size: 1rem;
 		display: inline-block;
 		color: $nobel;
+@include breakpoint (tablet) {
+		font-size: 1.6rem;
+	}
 		&:after {
 			content: "-";
 			display: inline-block;
 			padding: 0 1.4rem;
 			color: $nobel;
+
+			@include breakpoint (tablet) {
+				padding: 0 3.6rem;
+			}
 		}
 		&:nth-child(3){
 			&:after {

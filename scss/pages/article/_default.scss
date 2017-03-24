@@ -24,7 +24,8 @@
   //portrait
   &--portrait {
     @import  "portrait/article-main-img",
-    "portrait/article-intro";
+    "portrait/article-intro",
+        "portrait/diaporama";
   }
 
   &--landscape {

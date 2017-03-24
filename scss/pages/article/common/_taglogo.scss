@@ -1,5 +1,5 @@
 //-------------------------
-//-------------  ARTICLE PAGES tag logo
+//-------------  ARTICLE PAGES tag logo for all pages
 //-------------------------
 
 
@@ -8,4 +8,11 @@
   padding-left: 2.2rem;
 padding-top: 4.2rem;
   margin-bottom: 1.3rem;
+
+@include breakpoint (tablet) {
+  width: 16%;
+padding-left: 2.9rem;
+padding-top: 6.5rem;
+margin-bottom: 1.02rem;
+}
 }

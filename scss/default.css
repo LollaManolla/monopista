@@ -4538,7 +4538,7 @@ h4 {
 @media (min-width: 767px) and (max-width: 1024px) {
   /* line 5, blocks/b-author/small/_default.scss */
   .b-author--small {
-    padding-bottom: 25.444%;
+    padding-bottom: 26%;
     width: 40%;
   }
 }
@@ -4584,8 +4584,8 @@ h4 {
   .b-author--small img {
     bottom: -2.1rem;
     width: 42%;
-    left: 45%;
-    transform: translateX(-44%);
+    left: 42%;
+    transform: translateX(-42%);
   }
 }
 @media (max-width: 767px) {
@@ -4615,6 +4615,7 @@ h4 {
   /* line 5, blocks/b-author/small/_article-content.scss */
   .b-author--small .article-content {
     vertical-align: top;
+    left: -2rem;
   }
 }
 @media (max-width: 767px) {
@@ -4624,7 +4625,7 @@ h4 {
     left: 0.2rem;
   }
 }
-/* line 24, blocks/b-author/small/_article-content.scss */
+/* line 25, blocks/b-author/small/_article-content.scss */
 .b-author--small .article-content-wrapper {
   position: relative;
   padding: 0 0 1.3rem 0;
@@ -4633,14 +4634,14 @@ h4 {
   vertical-align: middle;
 }
 @media (min-width: 767px) and (max-width: 1024px) {
-  /* line 24, blocks/b-author/small/_article-content.scss */
+  /* line 25, blocks/b-author/small/_article-content.scss */
   .b-author--small .article-content-wrapper {
     vertical-align: top;
-    padding: 2.4rem 0 1.3rem 0;
+    padding: 5rem 0 1.3rem 0;
   }
 }
 @media (max-width: 767px) {
-  /* line 24, blocks/b-author/small/_article-content.scss */
+  /* line 25, blocks/b-author/small/_article-content.scss */
   .b-author--small .article-content-wrapper {
     vertical-align: top;
     padding: 2.4rem 0 1.3rem 0;
@@ -5249,20 +5250,38 @@ h4 {
   clear: both;
   padding: 1.8rem 0 0 8.3rem;
 }
+@media (min-width: 767px) and (max-width: 1024px) {
+  /* line 6, components/c-breadcrumb/_default.scss */
+  .c-breadcrumb {
+    padding: 4.6rem 0 0 10.7rem;
+  }
+}
 /* line 6, components/c-breadcrumb/_item.scss */
 .c-breadcrumb__item {
   font-size: 1rem;
   display: inline-block;
   color: #9e9e9e;
 }
-/* line 10, components/c-breadcrumb/_item.scss */
+@media (min-width: 767px) and (max-width: 1024px) {
+  /* line 6, components/c-breadcrumb/_item.scss */
+  .c-breadcrumb__item {
+    font-size: 1.6rem;
+  }
+}
+/* line 13, components/c-breadcrumb/_item.scss */
 .c-breadcrumb__item:after {
   content: "-";
   display: inline-block;
   padding: 0 1.4rem;
   color: #9e9e9e;
 }
-/* line 17, components/c-breadcrumb/_item.scss */
+@media (min-width: 767px) and (max-width: 1024px) {
+  /* line 13, components/c-breadcrumb/_item.scss */
+  .c-breadcrumb__item:after {
+    padding: 0 3.6rem;
+  }
+}
+/* line 24, components/c-breadcrumb/_item.scss */
 .c-breadcrumb__item:nth-child(3):after {
   content: "";
   padding: 0;
@@ -5464,9 +5483,24 @@ h4 {
   padding-top: 4.2rem;
   margin-bottom: 1.3rem;
 }
+@media (min-width: 767px) and (max-width: 1024px) {
+  /* line 6, pages/article/common/_taglogo.scss */
+  .article .c-taglogo {
+    width: 16%;
+    padding-left: 2.9rem;
+    padding-top: 6.5rem;
+    margin-bottom: 1.02rem;
+  }
+}
 /* line 5, pages/article/common/_article-header.scss */
 .article .article-header {
   padding-inline-start: 6.1rem;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  /* line 5, pages/article/common/_article-header.scss */
+  .article .article-header {
+    padding-inline-start: 7.5rem;
+  }
 }
 /* line 5, pages/article/common/_article-title.scss */
 .article .article-title {
@@ -5476,13 +5510,28 @@ h4 {
   font-size: 5rem;
   padding-left: 2.2rem;
 }
-/* line 11, pages/article/common/_article-title.scss */
+@media (min-width: 767px) and (max-width: 1024px) {
+  /* line 5, pages/article/common/_article-title.scss */
+  .article .article-title {
+    font-size: 6.7rem;
+    padding-left: 3rem;
+    line-height: 1.15;
+    max-width: 80%;
+  }
+}
+/* line 19, pages/article/common/_article-title.scss */
 .article .article-title:before {
   height: 88.800%;
   position: absolute;
   left: -0.05rem;
   top: 0.9rem;
   bottom: 0;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  /* line 19, pages/article/common/_article-title.scss */
+  .article .article-title:before {
+    top: 1.5rem;
+  }
 }
 /* line 5, pages/article/common/_article-subtitle.scss */
 .article h3 {
@@ -5501,6 +5550,13 @@ h4 {
   display: block;
   margin-top: 3.1rem;
 }
+@media (min-width: 767px) and (max-width: 1024px) {
+  /* line 5, pages/article/common/_article-publish.scss */
+  .article .article-publish {
+    font-size: 2.7rem;
+    margin-top: 3.65rem;
+  }
+}
 /* line 5, pages/article/common/_article-intro.scss */
 .article .article-intro {
   font-weight: 600;
@@ -5509,13 +5565,29 @@ h4 {
   font-size: 2rem;
   line-height: 2;
 }
+@media (min-width: 767px) and (max-width: 1024px) {
+  /* line 5, pages/article/common/_article-intro.scss */
+  .article .article-intro {
+    clear: both;
+    font-size: 3rem;
+    line-height: 2.2;
+    letter-spacing: -0.03rem;
+  }
+}
 /* line 5, pages/article/common/_article-main-content.scss */
 .article .article-main-content {
   padding: 0 16.8rem;
   margin-top: 4.5rem;
   margin-bottom: 3.5rem;
 }
-/* line 11, pages/article/common/_article-main-content.scss */
+@media (min-width: 767px) and (max-width: 1024px) {
+  /* line 5, pages/article/common/_article-main-content.scss */
+  .article .article-main-content {
+    padding: 0 10.5rem;
+    margin-top: 2.46rem;
+  }
+}
+/* line 16, pages/article/common/_article-main-content.scss */
 .article .article-main-content p {
   font-weight: lighter;
   font-family: "Open Sans", Arial, Helvetica, Tahoma, sans-serif;
@@ -5523,12 +5595,20 @@ h4 {
   line-height: 2.2;
   font-size: 1.8rem;
 }
-/* line 19, pages/article/common/_article-main-content.scss */
+@media (min-width: 767px) and (max-width: 1024px) {
+  /* line 16, pages/article/common/_article-main-content.scss */
+  .article .article-main-content p {
+    font-size: 2.7rem;
+    letter-spacing: -0.03rem;
+    line-height: 2.4;
+  }
+}
+/* line 30, pages/article/common/_article-main-content.scss */
 .article .article-main-content figure {
   margin: 4rem auto 3rem auto;
   padding: 0 16.6rem;
 }
-/* line 23, pages/article/common/_article-main-content.scss */
+/* line 34, pages/article/common/_article-main-content.scss */
 .article .article-main-content figure figcaption {
   font-family: "Cormorant", serif;
   font-weight: 400;
@@ -5596,6 +5676,10 @@ h4 {
   top: -2rem;
   left: -2.7rem;
 }
+/* line 5, pages/article/common/_diaporama.scss */
+.article .diaporama {
+  position: absolute;
+}
 /* line 5, pages/article/common/_article-footer.scss */
 .article .article-footer {
   padding: 0 16.8rem;
@@ -5605,10 +5689,27 @@ h4 {
 .article--portrait .article-main-img {
   width: 45.900%;
 }
+@media (min-width: 767px) and (max-width: 1024px) {
+  /* line 5, pages/article/portrait/_article-main-img.scss */
+  .article--portrait .article-main-img {
+    width: 64.555%;
+    margin-top: 2.4rem;
+  }
+}
 /* line 5, pages/article/portrait/_article-intro.scss */
 .article--portrait .article-intro {
   padding-top: 4.4rem;
   padding-inline-start: 2.2rem;
+}
+/* line 5, pages/article/portrait/_diaporama.scss */
+.article--portrait .diaporama {
+  position: relative;
+}
+@media (max-width: 1024px) {
+  /* line 5, pages/article/portrait/_diaporama.scss */
+  .article--portrait .diaporama {
+    position: absolute;
+  }
 }
 /* line 5, pages/article/landscape/_article-main-img.scss */
 .article--landscape .article-main-img {
@@ -5619,6 +5720,14 @@ h4 {
   margin-top: calc(80% - 511px);
   padding-inline-start: 10.7rem;
   padding-inline-end: 16rem;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  /* line 5, pages/article/landscape/_article-intro.scss */
+  .article--landscape .article-intro {
+    padding-top: 16rem;
+    padding-inline-start: 2.8rem;
+    padding-inline-end: 14rem;
+  }
 }
 /* line 6, pages/article/landscape/_b-author.scss */
 .article--landscape .b-author--small {
@@ -5651,11 +5760,7 @@ h4 {
 }
 /* line 5, pages/article/landscape/_article-main-content.scss */
 .article--landscape .article-main-content {
-  margin-top: 2.3rem;
-}
-/* line 5, pages/article/landscape/_diaporama.scss */
-.article--landscape .diaporama {
-  position: absolute;
+  margin-top: 0;
 }
 /* line 5, pages/article/recipes/_article-main-img.scss */
 .article--recipes .article-main-img {
@@ -5701,9 +5806,10 @@ h4 {
   font-family: "Cormorant", serif;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
+  margin-top: 2.5rem;
   font-size: 2.50rem;
 }
-/* line 10, pages/article/recipes/_article-subtitle.scss */
+/* line 11, pages/article/recipes/_article-subtitle.scss */
 .article--recipes h3 span {
   font-size: 4rem;
 }
@@ -5711,131 +5817,127 @@ h4 {
 .article--recipes .article-main-content {
   margin-top: 2.3rem;
 }
-/* line 5, pages/article/recipes/_diaporama.scss */
-.article--recipes .diaporama {
-  position: absolute;
-}
-/* line 57, pages/article/_default.scss */
+/* line 58, pages/article/_default.scss */
 .article.food .article-title:before {
   content: "";
   border-width: 0 0 0 0.4rem;
   border-style: solid;
   border-color: transparent transparent transparent #94EC9E;
 }
-/* line 65, pages/article/_default.scss */
+/* line 66, pages/article/_default.scss */
 .article.food .article-main-content a {
   background-color: #94EC9E;
   font-weight: 600;
   color: #000;
   padding: 0rem 0.6rem;
 }
-/* line 72, pages/article/_default.scss */
+/* line 73, pages/article/_default.scss */
 .article.food .c-blockquote__icon {
   color: #94EC9E;
 }
-/* line 74, pages/article/_default.scss */
+/* line 75, pages/article/_default.scss */
 .article.food .c-blockquote__icon:before {
   border: solid 0.3rem #94EC9E;
 }
-/* line 78, pages/article/_default.scss */
+/* line 79, pages/article/_default.scss */
 .article.food .c-tags__item:after,
 .article.food .article-video {
   border-color: #94EC9E;
 }
-/* line 83, pages/article/_default.scss */
+/* line 84, pages/article/_default.scss */
 .article.food.article--recipes h3 {
   color: #94EC9E;
 }
-/* line 57, pages/article/_default.scss */
+/* line 58, pages/article/_default.scss */
 .article.beauty .article-title:before {
   content: "";
   border-width: 0 0 0 0.4rem;
   border-style: solid;
   border-color: transparent transparent transparent #F0CBC5;
 }
-/* line 65, pages/article/_default.scss */
+/* line 66, pages/article/_default.scss */
 .article.beauty .article-main-content a {
   background-color: #F0CBC5;
   font-weight: 600;
   color: #000;
   padding: 0rem 0.6rem;
 }
-/* line 72, pages/article/_default.scss */
+/* line 73, pages/article/_default.scss */
 .article.beauty .c-blockquote__icon {
   color: #F0CBC5;
 }
-/* line 74, pages/article/_default.scss */
+/* line 75, pages/article/_default.scss */
 .article.beauty .c-blockquote__icon:before {
   border: solid 0.3rem #F0CBC5;
 }
-/* line 78, pages/article/_default.scss */
+/* line 79, pages/article/_default.scss */
 .article.beauty .c-tags__item:after,
 .article.beauty .article-video {
   border-color: #F0CBC5;
 }
-/* line 83, pages/article/_default.scss */
+/* line 84, pages/article/_default.scss */
 .article.beauty.article--recipes h3 {
   color: #F0CBC5;
 }
-/* line 57, pages/article/_default.scss */
+/* line 58, pages/article/_default.scss */
 .article.deco .article-title:before {
   content: "";
   border-width: 0 0 0 0.4rem;
   border-style: solid;
   border-color: transparent transparent transparent #E4D1B0;
 }
-/* line 65, pages/article/_default.scss */
+/* line 66, pages/article/_default.scss */
 .article.deco .article-main-content a {
   background-color: #E4D1B0;
   font-weight: 600;
   color: #000;
   padding: 0rem 0.6rem;
 }
-/* line 72, pages/article/_default.scss */
+/* line 73, pages/article/_default.scss */
 .article.deco .c-blockquote__icon {
   color: #E4D1B0;
 }
-/* line 74, pages/article/_default.scss */
+/* line 75, pages/article/_default.scss */
 .article.deco .c-blockquote__icon:before {
   border: solid 0.3rem #E4D1B0;
 }
-/* line 78, pages/article/_default.scss */
+/* line 79, pages/article/_default.scss */
 .article.deco .c-tags__item:after,
 .article.deco .article-video {
   border-color: #E4D1B0;
 }
-/* line 83, pages/article/_default.scss */
+/* line 84, pages/article/_default.scss */
 .article.deco.article--recipes h3 {
   color: #E4D1B0;
 }
-/* line 57, pages/article/_default.scss */
+/* line 58, pages/article/_default.scss */
 .article.fashion .article-title:before {
   content: "";
   border-width: 0 0 0 0.4rem;
   border-style: solid;
   border-color: transparent transparent transparent #ABE5DC;
 }
-/* line 65, pages/article/_default.scss */
+/* line 66, pages/article/_default.scss */
 .article.fashion .article-main-content a {
   background-color: #ABE5DC;
   font-weight: 600;
   color: #000;
   padding: 0rem 0.6rem;
 }
-/* line 72, pages/article/_default.scss */
+/* line 73, pages/article/_default.scss */
 .article.fashion .c-blockquote__icon {
   color: #ABE5DC;
 }
-/* line 74, pages/article/_default.scss */
+/* line 75, pages/article/_default.scss */
 .article.fashion .c-blockquote__icon:before {
   border: solid 0.3rem #ABE5DC;
 }
-/* line 78, pages/article/_default.scss */
+/* line 79, pages/article/_default.scss */
 .article.fashion .c-tags__item:after,
 .article.fashion .article-video {
   border-color: #ABE5DC;
 }
-/* line 83, pages/article/_default.scss */
+/* line 84, pages/article/_default.scss */
 .article.fashion.article--recipes h3 {
   color: #ABE5DC;
 }

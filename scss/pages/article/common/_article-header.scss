@@ -1,7 +1,11 @@
 //-------------------------
-//-------------  ARTICLE PAGES article header
+//-------------  ARTICLE PAGES article header for all pages
 //-------------------------
 
 .article-header {
   padding-inline-start: 6.1rem;
+@include breakpoint (tablet) {
+  padding-inline-start: 7.5rem;
+}
+
 }

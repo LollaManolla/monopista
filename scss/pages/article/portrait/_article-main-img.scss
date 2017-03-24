@@ -4,4 +4,10 @@
 
 .article-main-img {
   width: 45.900%;
+
+  @include breakpoint (tablet) {
+  width: 64.555%;
+  margin-top: 2.4rem;
+}
+
 }

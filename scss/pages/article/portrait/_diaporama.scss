@@ -3,5 +3,8 @@
 //-------------------------
 
 .diaporama {
-//position: absolute;
+position: relative;
+@include breakpoint (toDesktop) {
+  position: absolute;
+}
 }

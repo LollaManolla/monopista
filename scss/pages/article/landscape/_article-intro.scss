@@ -8,4 +8,13 @@
   margin-top:calc(80% - 511px);
   padding-inline-start: 10.7rem;
   padding-inline-end: 16rem;
+
+@include breakpoint (tablet) {
+  
+
+  padding-top: 16rem;
+  padding-inline-start: 2.8rem;
+  padding-inline-end: 14rem;
+}
+
 }

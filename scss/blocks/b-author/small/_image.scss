@@ -13,8 +13,8 @@ img {
   @include breakpoint (tablet){
 bottom: -2.1rem;
 width: 42%;
-left: 45%;
-  transform: translateX(-44%);
+left: 42%;
+  transform: translateX(-42%);
   }
   @include breakpoint (phone){
     bottom: -0.6rem;
