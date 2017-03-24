@@ -32,14 +32,23 @@
   @import   "landscape/article-main-img",
    "landscape/article-title",
     "landscape/b-author",
-    "landscape/diaporama";
-  //   "landscape/article-intro",
-  // "landscape/subtitle";
+    "landscape/diaporama",
+"landscape/article-intro",
+  "landscape/subtitle";
+}
+&--recipes {
+  @import   "recipes/article-main-img",
+  "recipes/article-title",
+    "recipes/b-author",
+    "recipes/diaporama",
+    "recipes/article-intro",
+  "recipes/subtitle";
 }
 
 
 
   //colors
+
   @for $i from 1 to $tagLength {
     $currentTag: nth($tagArray, $i);
     &.#{$currentTag} {
@@ -68,6 +77,11 @@
       .c-tags__item:after,
       .article-video {
           border-color:colorFunc(tag, $currentTag);
+      }
+      &.article--recipes {
+        h3 {
+          color: colorFunc(tag, $currentTag);
+        }
       }
     }
   }
