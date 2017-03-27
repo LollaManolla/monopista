@@ -15,7 +15,10 @@
 
 	@include breakpoint (tablet) {
 		font-size: 7rem;
-		width: 63%;
+		width: 64%;
+		padding-left: 2.3rem;
+		letter-spacing: -0.19rem;
+		margin-bottom: 4.8rem;
 	}
 
 	&:before {

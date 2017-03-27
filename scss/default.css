@@ -4967,13 +4967,28 @@ h4 {
   position: relative;
   text-align: center;
 }
-/* line 14, components/c-blockquote/_icon.scss */
+@media (min-width: 767px) and (max-width: 1024px) {
+  /* line 6, components/c-blockquote/_icon.scss */
+  .c-blockquote__icon {
+    font-size: 5rem;
+    width: 94%;
+    left: 1rem;
+    position: relative;
+  }
+}
+/* line 22, components/c-blockquote/_icon.scss */
 .c-blockquote__icon:before {
   width: 30.222%;
   content: "";
   position: absolute;
   left: 9.9rem;
   top: 50%;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  /* line 22, components/c-blockquote/_icon.scss */
+  .c-blockquote__icon:before {
+    width: 31%;
+  }
 }
 /* line 6, components/c-blockquote/_text.scss */
 .c-blockquote__text {
@@ -4990,10 +5005,13 @@ h4 {
   /* line 6, components/c-blockquote/_text.scss */
   .c-blockquote__text {
     font-size: 7rem;
-    width: 63%;
+    width: 64%;
+    padding-left: 2.3rem;
+    letter-spacing: -0.19rem;
+    margin-bottom: 4.8rem;
   }
 }
-/* line 21, components/c-blockquote/_text.scss */
+/* line 24, components/c-blockquote/_text.scss */
 .c-blockquote__text:before {
   content: "\201c";
   font-size: 19.8rem;
@@ -5003,14 +5021,14 @@ h4 {
   top: -4.6rem;
 }
 @media (min-width: 767px) and (max-width: 1024px) {
-  /* line 21, components/c-blockquote/_text.scss */
+  /* line 24, components/c-blockquote/_text.scss */
   .c-blockquote__text:before {
     font-size: 26rem;
     left: -9rem;
     top: -6rem;
   }
 }
-/* line 36, components/c-blockquote/_text.scss */
+/* line 39, components/c-blockquote/_text.scss */
 .c-blockquote__text:after {
   content: "\201e";
   font-size: 13.4rem;
@@ -5020,7 +5038,7 @@ h4 {
   bottom: 0.15rem;
 }
 @media (min-width: 767px) and (max-width: 1024px) {
-  /* line 36, components/c-blockquote/_text.scss */
+  /* line 39, components/c-blockquote/_text.scss */
   .c-blockquote__text:after {
     font-size: 16rem;
     right: -4rem;
@@ -5331,14 +5349,21 @@ h4 {
   padding: 0 0.9rem;
   margin-right: 2rem;
 }
-/* line 17, components/c-tags/_list.scss */
+@media (min-width: 767px) and (max-width: 1024px) {
+  /* line 6, components/c-tags/_list.scss */
+  .c-tags__item {
+    font-size: 2rem;
+    margin-right: 4rem;
+  }
+}
+/* line 22, components/c-tags/_list.scss */
 .c-tags__item--link {
   display: inline-block;
   position: relative;
   padding-bottom: 1rem;
   z-index: 1;
 }
-/* line 24, components/c-tags/_list.scss */
+/* line 29, components/c-tags/_list.scss */
 .c-tags__item:after {
   content: '';
   position: absolute;
@@ -5497,6 +5522,12 @@ h4 {
 .article {
   position: relative;
   margin-bottom: 7.8rem;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  /* line 5, pages/article/_default.scss */
+  .article {
+    margin-bottom: 11rem;
+  }
 }
 /* line 5, pages/article/common/_article-main-img.scss */
 .article .article-main-img {
@@ -5687,7 +5718,15 @@ h4 {
   border-style: solid;
   border-width: 1.1rem;
 }
-/* line 16, pages/article/common/_article-video.scss */
+@media (min-width: 767px) and (max-width: 1024px) {
+  /* line 5, pages/article/common/_article-video.scss */
+  .article .article-video {
+    width: 100%;
+    margin: 5.5rem auto 0 auto;
+    padding-bottom: 50%;
+  }
+}
+/* line 23, pages/article/common/_article-video.scss */
 .article .article-video iframe,
 .article .article-video object,
 .article .article-video embed {
@@ -5697,42 +5736,6 @@ h4 {
   width: 100%;
   height: 100%;
 }
-/* line 25, pages/article/common/_article-video.scss */
-.article .article-video__icon {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  display: block;
-  z-index: 1;
-}
-/* line 36, pages/article/common/_article-video.scss */
-.article .article-video__icon .googleplay {
-  font-family: "fontello";
-  color: #FFF;
-  font-size: 5.5rem;
-  cursor: pointer;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  z-index: 2;
-}
-/* line 43, pages/article/common/_article-video.scss */
-.article .article-video__icon .googleplay:before {
-  content: "";
-  border: solid 3px white;
-  border-radius: 50%;
-  width: 198%;
-  position: absolute;
-  height: 165%;
-  top: -2rem;
-  left: -2.7rem;
-}
 /* line 5, pages/article/common/_single-image.scss */
 .article .single-image {
   position: absolute;
@@ -5741,6 +5744,13 @@ h4 {
 .article .article-footer {
   padding: 0 16.8rem;
   margin-top: 7.9rem;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  /* line 5, pages/article/common/_article-footer.scss */
+  .article .article-footer {
+    padding: 0 9.8rem;
+    margin-top: 10.2rem;
+  }
 }
 /* line 5, pages/article/portrait/_article-main-img.scss */
 .article--portrait .article-main-img {
@@ -6069,9 +6079,21 @@ h4 {
   margin-top: 2.5rem;
   font-size: 2.50rem;
 }
-/* line 11, pages/article/recipes/_article-subtitle.scss */
+@media (min-width: 767px) and (max-width: 1024px) {
+  /* line 5, pages/article/recipes/_article-subtitle.scss */
+  .article--recipes h3 {
+    font-size: 4.8rem;
+  }
+}
+/* line 16, pages/article/recipes/_article-subtitle.scss */
 .article--recipes h3 span {
   font-size: 4rem;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  /* line 16, pages/article/recipes/_article-subtitle.scss */
+  .article--recipes h3 span {
+    font-size: 7rem;
+  }
 }
 /* line 5, pages/article/recipes/_article-main-content.scss */
 .article--recipes .article-main-content {
@@ -6102,127 +6124,127 @@ h4 {
     font-size: 2.7rem;
   }
 }
-/* line 61, pages/article/_default.scss */
+/* line 65, pages/article/_default.scss */
 .article.food .article-title:before {
   content: "";
   border-width: 0 0 0 0.4rem;
   border-style: solid;
   border-color: transparent transparent transparent #94EC9E;
 }
-/* line 69, pages/article/_default.scss */
+/* line 73, pages/article/_default.scss */
 .article.food .article-main-content a {
   background-color: #94EC9E;
   font-weight: 600;
   color: #000;
   padding: 0rem 0.6rem;
 }
-/* line 76, pages/article/_default.scss */
+/* line 80, pages/article/_default.scss */
 .article.food .c-blockquote__icon {
   color: #94EC9E;
 }
-/* line 78, pages/article/_default.scss */
+/* line 82, pages/article/_default.scss */
 .article.food .c-blockquote__icon:before {
   border: solid 0.3rem #94EC9E;
 }
-/* line 82, pages/article/_default.scss */
+/* line 86, pages/article/_default.scss */
 .article.food .c-tags__item:after,
 .article.food .article-video {
   border-color: #94EC9E;
 }
-/* line 87, pages/article/_default.scss */
+/* line 91, pages/article/_default.scss */
 .article.food.article--recipes h3 {
   color: #94EC9E;
 }
-/* line 61, pages/article/_default.scss */
+/* line 65, pages/article/_default.scss */
 .article.beauty .article-title:before {
   content: "";
   border-width: 0 0 0 0.4rem;
   border-style: solid;
   border-color: transparent transparent transparent #F0CBC5;
 }
-/* line 69, pages/article/_default.scss */
+/* line 73, pages/article/_default.scss */
 .article.beauty .article-main-content a {
   background-color: #F0CBC5;
   font-weight: 600;
   color: #000;
   padding: 0rem 0.6rem;
 }
-/* line 76, pages/article/_default.scss */
+/* line 80, pages/article/_default.scss */
 .article.beauty .c-blockquote__icon {
   color: #F0CBC5;
 }
-/* line 78, pages/article/_default.scss */
+/* line 82, pages/article/_default.scss */
 .article.beauty .c-blockquote__icon:before {
   border: solid 0.3rem #F0CBC5;
 }
-/* line 82, pages/article/_default.scss */
+/* line 86, pages/article/_default.scss */
 .article.beauty .c-tags__item:after,
 .article.beauty .article-video {
   border-color: #F0CBC5;
 }
-/* line 87, pages/article/_default.scss */
+/* line 91, pages/article/_default.scss */
 .article.beauty.article--recipes h3 {
   color: #F0CBC5;
 }
-/* line 61, pages/article/_default.scss */
+/* line 65, pages/article/_default.scss */
 .article.deco .article-title:before {
   content: "";
   border-width: 0 0 0 0.4rem;
   border-style: solid;
   border-color: transparent transparent transparent #E4D1B0;
 }
-/* line 69, pages/article/_default.scss */
+/* line 73, pages/article/_default.scss */
 .article.deco .article-main-content a {
   background-color: #E4D1B0;
   font-weight: 600;
   color: #000;
   padding: 0rem 0.6rem;
 }
-/* line 76, pages/article/_default.scss */
+/* line 80, pages/article/_default.scss */
 .article.deco .c-blockquote__icon {
   color: #E4D1B0;
 }
-/* line 78, pages/article/_default.scss */
+/* line 82, pages/article/_default.scss */
 .article.deco .c-blockquote__icon:before {
   border: solid 0.3rem #E4D1B0;
 }
-/* line 82, pages/article/_default.scss */
+/* line 86, pages/article/_default.scss */
 .article.deco .c-tags__item:after,
 .article.deco .article-video {
   border-color: #E4D1B0;
 }
-/* line 87, pages/article/_default.scss */
+/* line 91, pages/article/_default.scss */
 .article.deco.article--recipes h3 {
   color: #E4D1B0;
 }
-/* line 61, pages/article/_default.scss */
+/* line 65, pages/article/_default.scss */
 .article.fashion .article-title:before {
   content: "";
   border-width: 0 0 0 0.4rem;
   border-style: solid;
   border-color: transparent transparent transparent #ABE5DC;
 }
-/* line 69, pages/article/_default.scss */
+/* line 73, pages/article/_default.scss */
 .article.fashion .article-main-content a {
   background-color: #ABE5DC;
   font-weight: 600;
   color: #000;
   padding: 0rem 0.6rem;
 }
-/* line 76, pages/article/_default.scss */
+/* line 80, pages/article/_default.scss */
 .article.fashion .c-blockquote__icon {
   color: #ABE5DC;
 }
-/* line 78, pages/article/_default.scss */
+/* line 82, pages/article/_default.scss */
 .article.fashion .c-blockquote__icon:before {
   border: solid 0.3rem #ABE5DC;
 }
-/* line 82, pages/article/_default.scss */
+/* line 86, pages/article/_default.scss */
 .article.fashion .c-tags__item:after,
 .article.fashion .article-video {
   border-color: #ABE5DC;
 }
-/* line 87, pages/article/_default.scss */
+/* line 91, pages/article/_default.scss */
 .article.fashion.article--recipes h3 {
   color: #ABE5DC;
 }

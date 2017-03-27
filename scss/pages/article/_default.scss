@@ -6,6 +6,10 @@
   position: relative;
   margin-bottom: 7.8rem;
 
+  @include breakpoint (tablet) {
+    margin-bottom: 11rem;
+  }
+
 
 
   @import
@@ -23,14 +27,16 @@
 
   //portrait
   &--portrait {
-    @import  "portrait/article-main-img",
+    @import
+    "portrait/article-main-img",
     "portrait/article-intro",
     "portrait/b-author",
     "portrait/single-image";
   }
 
   &--landscape {
-    @import   "landscape/article-main-img",
+    @import
+    "landscape/article-main-img",
     "landscape/article-intro",
     "landscape/b-author",
     "landscape/article-title",
@@ -40,14 +46,15 @@
   }
 
   &--recipes {
-    @import   "recipes/article-main-img",
+    @import
+    "recipes/article-main-img",
     "recipes/article-intro",
     "recipes/b-author",
     "recipes/article-title",
     "recipes/article-subtitle",
     "recipes/article-main-content",
     "recipes/taglogo",
-        "recipes/article-publish";
+    "recipes/article-publish";
   }
 
 
@@ -81,7 +88,7 @@
       }
       .c-tags__item:after,
       .article-video {
-          border-color:colorFunc(tag, $currentTag);
+        border-color:colorFunc(tag, $currentTag);
       }
       &.article--recipes {
         h3 {

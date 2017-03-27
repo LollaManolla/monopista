@@ -3,9 +3,10 @@
 //-------------------------
 
 .article-footer {
-
   padding: 0 16.8rem;
-margin-top: 7.9rem;
-
-
+  margin-top: 7.9rem;
+  @include breakpoint (tablet) {
+    padding: 0 9.8rem;
+    margin-top: 10.2rem;
+  }
 }
