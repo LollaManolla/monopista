@@ -10,6 +10,9 @@
     margin-bottom: 11rem;
   }
 
+  @include breakpoint (phone) {
+    margin-bottom: 12rem;
+  }
 
 
   @import
@@ -31,6 +34,7 @@
     "portrait/article-main-img",
     "portrait/article-intro",
     "portrait/b-author",
+      "portrait/taglogo",
     "portrait/single-image";
   }
 
@@ -70,6 +74,9 @@
           border-width:0 0 0 0.4rem;
           border-style: solid;
           border-color: transparent transparent transparent colorFunc(tag, $currentTag);
+            @include breakpoint (phone) {
+                border-width:0 0 0 0.5rem;
+            }
         }
       }
       .article-main-content {
@@ -83,7 +90,12 @@
       .c-blockquote__icon {
         color: colorFunc(tag, $currentTag);
         &:before {
-          border: solid 0.3rem colorFunc(tag, $currentTag);
+          border-width:0.3rem;
+          border-style: solid;
+          border-color: colorFunc(tag, $currentTag);
+          @include breakpoint (phone) {
+              border-width: 0.4rem;
+          }
         }
       }
       .c-tags__item:after,

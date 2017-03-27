@@ -19,6 +19,11 @@
 			margin-right: 4rem;
 		}
 
+		@include breakpoint (phone) {
+		font-size: 2.35rem;
+margin-right: 7.5rem;
+}
+
 	&--link {
 		display: inline-block;
 		position: relative;

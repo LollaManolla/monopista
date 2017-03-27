@@ -1,15 +1,17 @@
 //-------------------------
-//-------------  ARTICLE PAGES page RECIPES  tag logo
+//-------------  ARTICLE PAGES page LANDSCAPE tag logo
 //-------------------------
 
 
 .c-taglogo {
 
 
-  @include breakpoint (tablet) {
-    position: relative;
-    padding-top: 0;
-    top: -3rem;
-    margin-bottom: 0rem;
-  }
+@include breakpoint (phone) {
+  //width: 29%;
+  // margin-top: 0;
+  // margin-bottom: 0;
+  // padding-inline-start: 7.8rem;
+  // top: -3.6rem;
+  // position: relative;
+}
 }

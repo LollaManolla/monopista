@@ -19,6 +19,12 @@
     padding-bottom: 50%;
   }
 
+  @include breakpoint (phone) {
+    width: 100%;
+    margin: 5.5rem auto 0 auto;
+    padding-bottom: 50%;
+  }
+
   iframe,
   object,
   embed {

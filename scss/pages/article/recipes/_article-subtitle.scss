@@ -11,9 +11,15 @@ h3 {
   @include breakpoint (tablet) {
     font-size: 4.8rem;
   }
+  @include breakpoint (phone) {
+    font-size: 4.8rem;
+  }
   span {
     font-size: 4rem;
     @include breakpoint (tablet) {
+      font-size:7rem;
+    }
+    @include breakpoint (phone) {
       font-size:7rem;
     }
   }

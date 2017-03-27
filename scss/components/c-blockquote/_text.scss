@@ -21,6 +21,16 @@
 		margin-bottom: 4.8rem;
 	}
 
+	@include breakpoint (phone) {
+		font-size: 7.15rem;
+width: 72%;
+padding-left: 1.5rem;
+letter-spacing: -0.18rem;
+margin-bottom: 4rem;
+padding-inline-end: 7rem;
+line-height: 1.10;
+	}
+
 	&:before {
 		content: "\201c";
 		font-size: 19.8rem;
@@ -33,6 +43,11 @@
 			font-size: 26rem;
 			left: -9rem;
 			top: -6rem;
+		}
+		@include breakpoint (phone) {
+			font-size: 25rem;
+			left: -9rem;
+			top: -7rem;
 		}
 	}
 
@@ -47,6 +62,13 @@
 			font-size: 16rem;
 			right: -4rem;
 			bottom: 6rem;
+		}
+		@include breakpoint (phone) {
+			font-size: 16rem;
+			right: -0.9rem;
+		bottom: 2.2rem;
+			position: relative;
+			line-height: 0;
 		}
 	}
 }

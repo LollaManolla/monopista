@@ -3,13 +3,17 @@
 //-------------------------
 
 .article-intro{
-padding-top: 4.4rem;
-padding-inline-start: 2.2rem;
+  padding-top: 4.4rem;
+  padding-inline-start: 8rem;
 
   @include breakpoint (tablet) {
-padding-top: 0;
-padding-inline-start: 2.8rem;
-padding-inline-end: 11rem;
-}
-
+    padding-top: 0;
+    padding-inline-start: 2.8rem;
+    padding-inline-end: 11rem;
+  }
+  @include breakpoint (phone) {
+    padding-top: 0;
+    padding-inline-start: 2.8rem;
+    padding-inline-end: 11rem;
+  }
 }

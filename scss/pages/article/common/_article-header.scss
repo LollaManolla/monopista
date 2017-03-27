@@ -3,9 +3,19 @@
 //-------------------------
 
 .article-header {
-  padding-inline-start: 6.1rem;
-@include breakpoint (tablet) {
-  padding-inline-start: 7.5rem;
-}
+//   padding-inline-start: 6.1rem;
+// @include breakpoint (tablet) {
+//   padding-inline-start: 0;
+// }
+// @include breakpoint (phone) {
+//   padding-inline-start: 0;
+// }
+
+// -moz-padding-start: 40px;
+// -webkit-padding-start: 40px;
+// -khtml-padding-start: 40px;
+// -o-padding-start: 40px;
+// padding-start: 40px;
+
 
 }

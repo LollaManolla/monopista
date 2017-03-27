@@ -5,7 +5,12 @@
 .article-main-img {
     @extend .clearfix;
   float: right;
-  margin-top: 2.2rem;
-  padding-left: 1rem;
+  margin-top: -2rem;
+  padding-left: 4rem;
   position: relative;
+  &:after {
+    clear: both;
+    display: block;
+    height: 100%;
+  }
 }

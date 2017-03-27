@@ -10,6 +10,7 @@ img {
   bottom: -1.8rem;
   left: 44%;
   transform: translateX(-44%);
+  z-index: 2;
   @include breakpoint (tablet){
 bottom: -2.1rem;
 width: 42%;

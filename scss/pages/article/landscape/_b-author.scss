@@ -7,12 +7,20 @@
     //float: none;
     padding-bottom: 16.222%;
     width: 21.6666%;
-    margin-bottom: 0;
+    margin-bottom: 9.4rem;
 
     @include breakpoint (tablet) {
       width: 36.33%;
       padding-bottom: 21.666%;
     }
+    @include breakpoint (phone) {
+      padding-bottom: 33%;
+      width: 40.88%;
+      margin-bottom: 0.5rem;
+      left: 3.2rem;
+    }
+
+
     img {
       left:33%;
       transform: translateX(-33%);
@@ -21,6 +29,13 @@
         left: 42%;
         transform: translateX(-42%);
       }
+      @include breakpoint (phone) {
+        bottom: -0.02rem;
+        width: 50%;
+        left:33%;
+        transform: translateX(-33%);
+      }
+
     }
     .article-content {
       left: -2.8rem;
@@ -31,6 +46,9 @@
         left: -3.7rem;
         top: -1rem;
       }
+      @include breakpoint (phone) {
+        left: -2;
+      }
 
       &-wrapper {
         padding: 4rem 0 1.3rem 0;
@@ -39,6 +57,9 @@
         @include breakpoint (tablet) {
 
           padding: 0;
+        }
+        @include breakpoint (phone) {
+          padding:1.5rem 0 1.3rem 0;
         }
       }
     }

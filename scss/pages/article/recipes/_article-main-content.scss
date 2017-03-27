@@ -1,11 +1,45 @@
 //-------------------------
-//-------------  ARTICLE PAGES page RECIPES article content
+//-------------  ARTICLE PAGES  page LANDSCAPE  article content
 //-------------------------
 
 .article-main-content {
 
-margin-top: 0;
+  margin-top: 2.3rem;
+
+  @include breakpoint (phone) {
+    margin-top: 5.2rem;
+    padding: 0;
+  }
+  p,h3 {
+    @include breakpoint (phone) {
+      padding-inline-start: 8rem;
+      padding-inline-end: 7rem;
+
+      -moz-padding-start: 8rem;
+      -webkit-padding-start: 8rem;
+       -khtml-padding-start: 8rem;
+       -o-padding-start: 8rem;
+       padding-start: 8rem;
+
+       -moz-padding-end: 7rem;
+       -webkit-padding-end: 7rem;
+        -khtml-padding-end: 7rem;
+        -o-padding-end: 7rem;
+        padding-end: 7rem;
 
 
+    }
+  }
+figure {
+  figcaption {
 
+    @include breakpoint (phone) {
+      font-size: 2.8rem;
+      line-height: 1.45;
+      padding-inline-start: 8rem;
+      padding-inline-end: 8rem;
+      margin-top: 2.3rem;
+    }
+  }
+}
 }
