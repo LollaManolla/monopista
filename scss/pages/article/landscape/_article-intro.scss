@@ -10,11 +10,12 @@
   padding-inline-end: 16rem;
 
 @include breakpoint (tablet) {
-  
 
-  padding-top: 16rem;
-  padding-inline-start: 2.8rem;
-  padding-inline-end: 14rem;
+  padding-top: 0;
+  padding-inline-start: 3rem;
+  padding-inline-end: 9rem;
+  clear: none;
+  margin-top: -4rem;
 }
 
 }

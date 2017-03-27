@@ -18,14 +18,15 @@
   "common/article-intro",
   "common/article-main-content",
   "common/article-video",
-  "common/diaporama",
+  "common/single-image",
   "common/article-footer";
 
   //portrait
   &--portrait {
     @import  "portrait/article-main-img",
     "portrait/article-intro",
-        "portrait/diaporama";
+    "portrait/b-author",
+    "portrait/single-image";
   }
 
   &--landscape {
@@ -34,7 +35,8 @@
     "landscape/b-author",
     "landscape/article-title",
     "landscape/article-main-content",
-    "landscape/diaporama";
+    "landscape/taglogo",
+    "landscape/article-publish";
   }
 
   &--recipes {
@@ -44,7 +46,8 @@
     "recipes/article-title",
     "recipes/article-subtitle",
     "recipes/article-main-content",
-    "recipes/diaporama";
+    "recipes/taglogo",
+        "recipes/article-publish";
   }
 
 

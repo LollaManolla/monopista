@@ -1,0 +1,15 @@
+//-------------------------
+//-------------  ARTICLE PAGES page LANDSCAPE tag logo
+//-------------------------
+
+
+.c-taglogo {
+
+
+@include breakpoint (tablet) {
+  position: relative;
+  padding-top: 0;
+  top: -3rem;
+  margin-bottom: 0rem;
+}
+}

@@ -2,6 +2,9 @@
 //-------------  ARTICLE PAGES page LANDSCAPE diaporama landscape
 //-------------------------
 
-.diaporama {
-
+.single-image {
+position: relative;
+@include breakpoint (toDesktop) {
+  position: absolute;
+}
 }

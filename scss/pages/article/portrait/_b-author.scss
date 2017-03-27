@@ -1,0 +1,11 @@
+//-------------------------
+//-------------  ARTICLE PAGES page LANDSCAPE block author small
+//-------------------------
+
+.b-author {
+  &--small {
+@include breakpoint (tablet) {
+  margin-bottom: calc(100% - 80%);
+}
+  }
+}

@@ -13,8 +13,9 @@
   padding-bottom: 20.7%;
   width: 21.6666%;
   display: inline-block;
+
   @include breakpoint (tablet) {
-    padding-bottom: 26%;
+    padding-bottom: 28%;
     width: 40%;
   }
 
@@ -35,4 +36,5 @@
           "article-content",
           "article-author",
           "article-author-quote";
+          
 }

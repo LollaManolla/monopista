@@ -1,10 +1,25 @@
 //-------------------------
-//-------------  ARTICLE PAGES page LANDSCAPE diaporama landscape
+//-------------  ARTICLE PAGES page PORTRAIT diaporama 
 //-------------------------
 
 .diaporama {
-position: relative;
-@include breakpoint (toDesktop) {
-  position: absolute;
+
+  &__holder{
+    padding: 16.346%;
+    	background-image: url(#{$imgBaseUrl}/diaporama-background.jpg);
+      background-repeat: repeat;
+      background-position: center;
+      img{
+        box-shadow: 0px 2px 35px 5px black;
+      }
+  }
 }
+.openDiaporama{
+  position: absolute;
+  top: 45%;
+  color: $white;
+  left: 30%;
+  font-size: 22px;
+  border: 1px solid white;
+  padding: 30px;
 }

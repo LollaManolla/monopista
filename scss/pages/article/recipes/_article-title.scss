@@ -1,5 +1,5 @@
 //-------------------------
-//-------------  ARTICLE PAGES page LANDSCAPE  article title
+//-------------  ARTICLE PAGES page RECIPES   article title
 //-------------------------
 
 .article-title {
@@ -9,4 +9,15 @@
   float: left;
   width: 100%;
 padding-inline-end: 50%;
+
+@include breakpoint (tablet) {
+padding-inline-end: 0;
+float: none;
+max-width: none;
+margin-top: -1.9rem;
+line-height: 1.2;
+margin-bottom: 8.5rem;
+}
+
+
 }

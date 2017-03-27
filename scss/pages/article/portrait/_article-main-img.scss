@@ -6,8 +6,26 @@
   width: 45.900%;
 
   @include breakpoint (tablet) {
-  width: 64.555%;
-  margin-top: 2.4rem;
-}
+    position: absolute;
+    right: 0;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+
+    width: 59%;
+    margin-top: 2.4rem;
+    padding-bottom: 68.333%;
+
+
+    .single-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+
+  }
 
 }

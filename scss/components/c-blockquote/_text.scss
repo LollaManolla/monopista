@@ -12,22 +12,38 @@
 	letter-spacing: -0.25rem;
 	position: relative;
 	margin-bottom: 2.2rem;
-&:before {
-	content: "\201c";
-	font-size: 19.8rem;
-	font-family: $cormorant	;
-	position: absolute;
-	left: -8.6rem;
-top: -4.6rem;
 
-}
-&:after {
-content: "\201e";
+	@include breakpoint (tablet) {
+		font-size: 7rem;
+		width: 63%;
+	}
+
+	&:before {
+		content: "\201c";
+		font-size: 19.8rem;
+		font-family: $cormorant	;
+		position: absolute;
+		left: -8.6rem;
+		top: -4.6rem;
+
+		@include breakpoint (tablet) {
+			font-size: 26rem;
+			left: -9rem;
+			top: -6rem;
+		}
+	}
+
+	&:after {
+		content: "\201e";
 		font-size: 13.4rem;
-	font-family: $cormorant	;
-	position: absolute;
-	right: 8.2rem;
-	bottom: 0.15rem;
-}
-
+		font-family: $cormorant	;
+		position: absolute;
+		right: 8.2rem;
+		bottom: 0.15rem;
+		@include breakpoint (tablet) {
+			font-size: 16rem;
+			right: -4rem;
+			bottom: 6rem;
+		}
+	}
 }

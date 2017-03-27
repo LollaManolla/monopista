@@ -8,4 +8,10 @@ h3 {
   position: relative;
   font-size: 3rem;
   margin-bottom: 2.4rem;
+
+  @include  breakpoint (tablet) {
+    font-size: 4rem;
+    margin-bottom: 3.2rem;
+
+  }
 }
