@@ -15,58 +15,18 @@
 	}
 }
 
-// .withPadding {
-// 	@extend .clearfix;
-// 	//max-width: 1320px;
-// 	margin-left: auto;
-// 	margin-right: auto;
-// //	background-color: purple;
-// padding: 0 6rem;
-// 	@include breakpoint (tablet) {
-// 		//max-width: 610px;
-// 	}
-// 	@include breakpoint (phone) {
-// 		//max-width: none;
-// 	}
-// }
-
-// .with-DoublePadding { //use it with max-width ispred
-// 	padding: 0 14.36rem;
-// 	@include breakpoint (tablet) {
-// 		padding: 0 10.2rem;
-// 	}
-// 	@include breakpoint (phone) {
-// 		padding: 0 6.5rem;
-// 	}
-// }
-
-// .withDoublePadding {
-// 	@extend .clearfix;
-// 	max-width: 1150px;
-// 	padding: 0 14.36rem;
-// 	margin-left: auto;
-// 	margin-right: auto;
-// //	background-color: gold;
-// 	@include breakpoint (tablet) {
-// 		max-width: 610px;
-// 		padding: 0 14.36rem;
-// 	}
-// 	@include breakpoint (phone) {
-// 		max-width: 510px;
-// 		padding: 0 14.36rem;
-// 	}
-// }
 
 .two-col {
 	float: left;
 	padding-left: 14.4rem;
 	width: 55.111%;
-	margin-top: 7.6rem;
+margin-top: 5rem;
 	 @extend .clearfix;
 
 	@include breakpoint (toDesktop) {
 		width: 100%;
 		float: none;
+		margin-top: 0;
 
 
 	}
@@ -76,7 +36,7 @@
 	}
 
 	@include breakpoint (phone) {
-		padding: 0 6.5rem;
+		padding: 0 7.80rem;
 		margin-bottom: 10rem;
 	}
 }
