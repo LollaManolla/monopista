@@ -3,7 +3,8 @@
 //-------------------------
 .b-footer {
     background-color: $white;
-    padding: 3rem 8%;
+    padding: 5rem 8%;
+    border-top: 1px solid $lightGray;
     @media screen and (min-width: 1750px){
         padding: 3rem 4%;
     }

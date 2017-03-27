@@ -27,7 +27,7 @@
 		$currentTag: nth($tagArray, $i);
 		&.#{$currentTag} {
 			.pagination__list--item {
-				.current {
+				.current, ._on {
 					color: colorFunc(tag, $currentTag);
 				}
 				a:hover {

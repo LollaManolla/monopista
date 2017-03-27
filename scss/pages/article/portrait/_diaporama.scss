@@ -1,25 +1,266 @@
 //-------------------------
-//-------------  ARTICLE PAGES page PORTRAIT diaporama 
+//-------------  ARTICLE PAGES page PORTRAIT diaporama
 //-------------------------
+  .diaporama--portrait{
+        width: 45.900%;
+        position: relative;
+      .single-image{
+        padding: 16.346%;
+      	background-image: url(#{$imgBaseUrl}/diaporama-background.jpg);
+        background-repeat: repeat;
+        background-position: center;
+        position: relative;
+        z-index: 1;
+        img{
+          box-shadow: 0px 2px 35px 5px black;
+        }
+      }
+      .diaporama__thumbnails{
+        position: absolute;
+        bottom: 11%;
+        text-align: center;
+        z-index: 2;
+        @include breakpoint (tablet){
+          display: none;
+        }
+        img{
+          display: inline-block;
+          width: 25.175%;
+          /* text-align: center; */
+          margin: 0 2%;
+        }
+      }
+      .openDiaporama{
+        position: absolute;
+        top: 45%;
+        color: $white;
+        left: 30%;
+        font-size: 22px;
+        border: 1px solid white;
+        padding: 25px 35px;
+        @include transition(.3s all ease-in);
+        cursor: pointer;
+        @include breakpoint (tablet){
+          display: none;
+        }
+        &:hover{
+          background-color: $black;
+          color: $white;
+        }
+      }
+      &.fullscreen{
+        position: fixed;
+        top: 100%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+        background-image: url(#{$imgBaseUrl}/diaporama-background.jpg);
+        background-repeat: repeat;
+        background-position: center;
+        z-index: 999;
+        width: auto;
+        @include transition(.3s all ease-in);
+        .slider-for{
+          height: 75%;
+          overflow: hidden;
+          padding-top: 5%;
+          @include breakpoint (tablet){
+            padding: 0;
+          }
+          @media screen and (min-width: 1020px) and (max-width: 1024px){
+            height: 90%;
+          }
+          .slick-prev{
+            visibility: hidden;
+            position: absolute;
+            top: 50%;
+            left: 4%;
+            z-index: 10;
+            cursor: pointer;
+            @include breakpoint (tablet){
+              left: 2%;
+              top: 30%;
+            }
+            &:before{
+              background-image: url(#{$imgBaseUrl}/arrow-left.png);
+              background-position: center;
+              display: block;
+              content: '';
+              width: 50px;
+              height: 30px;
+              visibility: visible;
+              background-repeat: no-repeat;
+            }
+          }
+          .slick-next{
+            visibility: hidden;
+            position: absolute;
+            top: 50%;
+            right: 4%;
+            z-index: 10;
+            cursor: pointer;
+            @include breakpoint (tablet){
+              right: 2%;
+              top: 30%;
+            }
+            &:before{
+              background-image: url(#{$imgBaseUrl}/arrow-right.png);
+              background-position: center;
+              display: block;
+              content: '';
+              width: 50px;
+              height: 30px;
+              visibility: visible;
+              background-repeat: no-repeat;
+            }
+          }
+           .slick-list{
+             height: 100%;
+           }
+           .slick-track{
+             height: 95%;
+             overflow: hidden;
+             @include breakpoint (tablet){
+               height: 98%;
+             }
+           }
+           .slick-slide{
+             padding: 5rem;
+             @include breakpoint (tablet){
+               padding: 0;
+             }
+           }
+           .slick-slide img{
+             width: 30%;
+             margin-left: 25%;
+             @include breakpoint (tablet){
+                width: 45.574%;
+             }
+             @media screen and (min-width: 1020px) and (max-width: 1024px){
+              width: 25%;
+              margin-left: 35%;
+             }
+           }
+           &ItemHolder{
+             position: absolute;
+              top: 0%;
+              left: 65%;
+              right: 10%;
+              color: $white;
+              @include breakpoint (tablet){
+                bottom: 3%;
+                left: 13%;
+                right: 13%;
+                top: auto;
+              }
+              h2{
+                line-height: 3.5rem;
+                font-weight: 900;
+                font-size: 3rem;
+                padding-right: 10%;
+                margin-bottom: 5%;
+                position: relative;
+                font-family: $baseFont;
+                @include breakpoint (tablet){
+                  font-size: 25px;
+                }
+                &:before{
+                  position: absolute;
+                  left: -5%;
+                  width: 4px;
+                  /* bottom: 0; */
+                  top: 11%;
+                  content: '';
+                  display: block;
+                  background: $white;
+                  /* right: 2px; */
+                  height: 81%;
+                  @include breakpoint (tablet){
+                    top: 20%;
+                    left: -3%;
+                  }
+                }
+              }
+              p{
+                 line-height: 2.5rem;
+                 font-weight: 600;
+                 font-size: 1.3rem;
+                 @include breakpoint (tablet){
+                   font-size: 1.6rem;
+                   line-height: 3.5rem;
+                 }
+              }
+           }
 
-.diaporama {
-
-  &__holder{
-    padding: 16.346%;
-    	background-image: url(#{$imgBaseUrl}/diaporama-background.jpg);
-      background-repeat: repeat;
-      background-position: center;
-      img{
-        box-shadow: 0px 2px 35px 5px black;
+        }
+        .slider-nav{
+          height: 30%;
+          width: 75%;
+          margin-left: -7%;
+          @include breakpoint (tablet){
+            margin-left: -9.5%;
+            position: absolute;
+            top: 49%;
+            width: 95%;
+          }
+          .slick-slide{
+             margin-right: 1%;
+          }
+        }
+      }
+      &.openFull{
+        @include transition(.3s all ease-in);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: auto;
+        .closeDiaporama{
+          position: absolute;
+          cursor: pointer;
+          top: 4.164%;
+          right: 3.164%;
+          @include breakpoint (tablet){
+            top: 2%;
+          }
+        }
+        .social{
+          font-family: $fontFontello;
+          position: absolute;
+          right: 13%;
+          bottom: 13%;
+          text-align: center;
+          @media screen and (min-width: 1020px) and (max-width: 1024px){
+           bottom: 5%;
+          }
+          &:after{
+            display: block;
+            width: 4rem;
+            height: 2px;
+            background-color: $white;
+            content: '';
+            @include breakpoint (tablet){
+              display: block;
+              width: 2px;
+              height: 4rem;
+              background-color: $white;
+              content: '';
+              position: absolute;
+              right: -3rem;
+              top: -1rem;
+            }
+          }
+          a{
+            color: $white;
+            font-size: 2.2rem;
+            display: block;
+            margin-bottom: 2.5rem;
+            @include breakpoint (tablet){
+              display: inline-block;
+              margin-left: 4rem;
+              margin-bottom: auto;
+            }
+          }
+        }
       }
   }
-}
-.openDiaporama{
-  position: absolute;
-  top: 45%;
-  color: $white;
-  left: 30%;
-  font-size: 22px;
-  border: 1px solid white;
-  padding: 30px;
-}

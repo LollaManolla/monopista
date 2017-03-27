@@ -15,6 +15,9 @@
 	    padding-right: 2.5rem;
 	    margin-top: 0.4rem;
 	}
+	@include breakpoint (tablet){
+		margin-top: 1rem;
+	}
 	@include breakpoint (phone){
 		padding-right: 1rem;
 	}

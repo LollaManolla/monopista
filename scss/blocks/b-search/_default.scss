@@ -33,6 +33,9 @@
 		left: 18%;
 		right: 18%;
 	}
+	@include breakpoint (tablet){
+		    font-size: 3.5rem;
+	}
 	form{
 		@include breakpoint (toDesktop){
 			text-align: left;

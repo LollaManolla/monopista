@@ -37,6 +37,7 @@
 			position: relative;
 			@include transition(all .3s ease-in);
 			font-size: 0.9vw;
+			font-weight: bold;
 			@include breakpoint (bigDesktop){
 				font-size: 1.3rem;
 			}

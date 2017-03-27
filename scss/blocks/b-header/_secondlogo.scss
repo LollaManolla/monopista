@@ -11,6 +11,10 @@
 	    text-align: center;
 		display: block;
 	}
+	@include breakpoint (tablet){
+		    width: 38.5rem;
+				padding: 2rem;
+	}
 	&__black{
 		color: $black;
 		font-family: $baseFont;
@@ -22,6 +26,9 @@
 		}
 		@include breakpoint (toDesktop){
 			font-size: 1.4rem;
+		}
+		@include breakpoint (tablet){
+			font-size: 1.8rem;
 		}
 	}
 	&__red{

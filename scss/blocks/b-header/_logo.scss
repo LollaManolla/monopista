@@ -12,11 +12,27 @@
     width: 33.33%;
 	@include breakpoint (toDesktop){
 		text-align: center;
-		width: auto;
-		float: none;
+		width: 60%;
+		margin-left: 0%;
+		@include transition(.3s all ease-in);
 	}
 	@include breakpoint (phone){
 		    width: 80%;
+	}
+	&.stickyTablet{
+		width: 60%;
+		margin-left: -60%;
+		@include transition(.3s all ease-in);
+		.logo-img{
+			width: 35%;
+		}
+		.logo-title{
+			font-size: 2vw;
+		}
+	}
+	&.stickyMobile{
+		opacity: 0;
+		@include transition(.3s all ease-in);
 	}
 	.logo {
 		display: inline-block;
@@ -26,7 +42,7 @@
 			display: inline-block;
 			vertical-align: middle;
 			@include breakpoint (toDesktop){
-				width: auto;
+				width: 45%;
 			}
 			@include breakpoint (phone){
 				width: 40%;
@@ -43,6 +59,7 @@
 			font-size: 1.3195vw;
 			font-family: $cormorant;
 			color: $black;
+			letter-spacing: -1px;
 			@include breakpoint (bigDesktop){
 				font-size: 1.8rem;
 			}

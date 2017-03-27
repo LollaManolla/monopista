@@ -1,7 +1,6 @@
 //-------------------------
 //-------------  ARTICLE PAGES default
 //-------------------------
-
 .article {
   position: relative;
   margin-bottom: 7.8rem;
@@ -10,9 +9,6 @@
     margin-bottom: 11rem;
   }
 
-  @include breakpoint (phone) {
-    margin-bottom: 12rem;
-  }
 
 
   @import
@@ -28,13 +24,13 @@
   "common/single-image",
   "common/article-footer";
 
+
   //portrait
   &--portrait {
     @import
     "portrait/article-main-img",
     "portrait/article-intro",
     "portrait/b-author",
-      "portrait/taglogo",
     "portrait/single-image";
   }
 
@@ -61,7 +57,7 @@
     "recipes/article-publish";
   }
 
-
+@import "portrait/diaporama";
 
   //colors
 
@@ -74,9 +70,6 @@
           border-width:0 0 0 0.4rem;
           border-style: solid;
           border-color: transparent transparent transparent colorFunc(tag, $currentTag);
-            @include breakpoint (phone) {
-                border-width:0 0 0 0.5rem;
-            }
         }
       }
       .article-main-content {
@@ -90,12 +83,7 @@
       .c-blockquote__icon {
         color: colorFunc(tag, $currentTag);
         &:before {
-          border-width:0.3rem;
-          border-style: solid;
-          border-color: colorFunc(tag, $currentTag);
-          @include breakpoint (phone) {
-              border-width: 0.4rem;
-          }
+          border: solid 0.3rem colorFunc(tag, $currentTag);
         }
       }
       .c-tags__item:after,

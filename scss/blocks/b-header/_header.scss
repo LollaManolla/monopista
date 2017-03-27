@@ -12,7 +12,31 @@
 	 right: 0;
 		z-index: 999;
 		background-color: $headerGray;
-
+		@include breakpoint (tablet){
+			@include transition(.3s all ease-in);
+		}
+	&.borderBottom{
+		@include transition(.3s all ease-in);
+		height: 9rem;
+		padding: 3rem 8.77%;
+		&:after{
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background-color: $lightGray;
+			left: 0;
+			bottom: 0;
+			content: '';
+			@include transition(.3s all ease-in);
+		}
+		.hamburger{
+			 top: 3.3rem;
+		}
+	}
+	&.backgroundNone{
+		background-color: transparent;
+		@include transition(.3s all ease-in);
+	}
 	&.home {
 		background-color: $headerGray;
 	}

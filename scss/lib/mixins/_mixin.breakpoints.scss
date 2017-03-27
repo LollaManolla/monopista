@@ -29,4 +29,10 @@
 	@else if $point == phone {
 		@media (max-width: $phone)								{ @content; }
 	}
+	@else if $point == phone {
+		@media (max-width: $phone)								{ @content; }
+	}
+	 @else if $point == devices {
+        @media (max-width: $tablet)                              { @content; }
+    }
 }
