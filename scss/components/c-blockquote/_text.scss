@@ -5,29 +5,30 @@
 
 &__text {
 	display: block;
-	width: 57.333%;
-	float: right;
+	// width: 57.333%;
+	// float: right;
 	font-size: 6.22rem;
 	font-weight: 800;
 	letter-spacing: -0.25rem;
 	position: relative;
-	margin-bottom: 2.2rem;
+margin-bottom: 2.4rem;
 
 	@include breakpoint (tablet) {
 		font-size: 7rem;
-		width: 64%;
+	//	width: 60%;
 		padding-left: 2.3rem;
 		letter-spacing: -0.19rem;
 		margin-bottom: 4.8rem;
+		// margin-top: 9rem;
 	}
 
 	@include breakpoint (phone) {
 		font-size: 7.15rem;
-width: 72%;
+//width: 72%;
 padding-left: 1.5rem;
 letter-spacing: -0.18rem;
 margin-bottom: 4rem;
-padding-inline-end: 7rem;
+// padding-inline-end: 7rem;
 line-height: 1.10;
 	}
 
@@ -36,18 +37,20 @@ line-height: 1.10;
 		font-size: 19.8rem;
 		font-family: $cormorant	;
 		position: absolute;
+		line-height: 0;
 		left: -8.6rem;
-		top: -4.6rem;
+	    top: 5.2rem;
 
 		@include breakpoint (tablet) {
 			font-size: 26rem;
-			left: -9rem;
-			top: -6rem;
+
+			top: 7rem;
 		}
 		@include breakpoint (phone) {
 			font-size: 25rem;
 			left: -9rem;
-			top: -7rem;
+top: 6.5rem;
+
 		}
 	}
 
@@ -55,20 +58,18 @@ line-height: 1.10;
 		content: "\201e";
 		font-size: 13.4rem;
 		font-family: $cormorant	;
-		position: absolute;
-		right: 8.2rem;
-		bottom: 0.15rem;
+		position: relative;
+		line-height: 0;
+		right: -1.1rem;
+    top: -1.3rem;
 		@include breakpoint (tablet) {
 			font-size: 16rem;
-			right: -4rem;
-			bottom: 6rem;
+	
 		}
 		@include breakpoint (phone) {
 			font-size: 16rem;
-			right: -0.9rem;
-		bottom: 2.2rem;
-			position: relative;
-			line-height: 0;
+			right: -1rem;
+	top: -2.2rem;
 		}
 	}
 }

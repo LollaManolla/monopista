@@ -3,17 +3,21 @@
 //-------------------------
 
 .article-intro{
-  padding-top: 4.4rem;
-  padding-inline-start: 8rem;
+  clear: none;
+  padding-top: 3.8rem;
+  max-width: 68%;
+  @include inline-padding-start(8rem);
 
   @include breakpoint (tablet) {
     padding-top: 0;
-    padding-inline-start: 2.8rem;
-    padding-inline-end: 11rem;
+    clear: both;
+    max-width: none;
+      @include inline-padding-start(10.2rem);
+        @include inline-padding-end(11rem);
   }
-  @include breakpoint (phone) {
-    padding-top: 0;
-    padding-inline-start: 2.8rem;
-    padding-inline-end: 11rem;
-  }
+    @include breakpoint (phone) {
+      padding-top: 0;
+      max-width: none;
+
+    }
 }

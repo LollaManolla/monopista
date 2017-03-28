@@ -3,20 +3,20 @@
 //-------------------------
 
 .article-video{
-  width:68%;
+  width:51%;
   margin:4rem auto 0 auto;
   text-align: center;
   position:relative;
-  padding-bottom:34%;
+  padding-bottom:25.33%;
   padding-top:30px; //To avoid issues with the broken box model (IE5 or IE6 in quirks mode), we use padding-top rather than height to create room for the chrome.
   height:0;
   overflow:hidden;
   border-style: solid;
   border-width: 1.1rem;
   @include breakpoint (tablet) {
-    width: 100%;
+    width: 79%;
     margin: 5.5rem auto 0 auto;
-    padding-bottom: 50%;
+    padding-bottom: 41%;
   }
 
   @include breakpoint (phone) {

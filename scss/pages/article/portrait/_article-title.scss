@@ -1,0 +1,18 @@
+//-------------------------
+//-------------  ARTICLE PAGES article title for all pages
+//-------------------------
+
+.article-title {
+
+
+
+  @include breakpoint (tablet) {
+
+    max-width: 70%;
+
+  }
+  @include breakpoint (phone) {
+  margin-top: -12rem;
+}
+
+}

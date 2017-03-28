@@ -8,17 +8,36 @@
   position: relative;
   font-size: 5rem;
   padding-left: 2.2rem;
-margin-inline-start: 6rem;
+  line-height: 1.13;
+  max-width: 50%;
+  @include inline-margin-start(6rem);
+
 
   @include breakpoint (tablet) {
     font-size: 6.7rem;
     padding-left: 3rem;
     line-height: 1.15;
     max-width: 80%;
+    @include inline-margin-start(7.5rem);
+    margin-top: -1.9rem;
+    line-height: 1.2;
+    margin-bottom: 8.5rem;
   }
 
+  @include breakpoint (phone) {
+  padding-left: 2.8rem;
+    @include inline-margin-start(5.2rem);
+      @include inline-padding-end(8rem);
+  font-size: 6rem;
+  line-height: 1.25;
+  margin-top: -1.7rem;
+  margin-bottom: 6.3rem;
+  max-width: none;
+  }
+
+
   &:before {
-    height: 88.800%;
+    height: auto;
     position: absolute;
     left: -0.05rem;
     top: 0.9rem;
@@ -26,6 +45,43 @@ margin-inline-start: 6rem;
   @include breakpoint (tablet) {
     top: 1.5rem;
   }
+    @include breakpoint (phone) {
+      top: 2rem;
+    }
 
   }
 }
+
+
+//
+//   width: 100%;
+//   line-height: 1.13;
+//   float: left;
+//   width: 100%;
+// padding-inline-end: 50%;
+//
+// @include breakpoint (tablet) {
+// padding-inline-end: 0;
+// float: none;
+// max-width: none;
+// margin-top: -1.9rem;
+// line-height: 1.2;
+// margin-bottom: 8.5rem;
+// }
+//
+// @include breakpoint (phone) {
+// padding-left: 2.8rem;
+// margin-inline-start: 5.2rem;
+// padding-inline-end: 8rem;
+// font-size: 6rem;
+// line-height: 1.25;
+// margin-top: -1.7rem;
+// margin-bottom: 6.3rem;
+// }
+//
+// &:before {
+//   @include breakpoint (phone) {
+//     top: 2rem;
+//     height: 66%;
+//   }
+// }

@@ -3,14 +3,18 @@
 //-------------------------
 
 .article-main-content {
-
-  padding: 0 16.8rem;
-  margin-top: 4.5rem;
-  margin-bottom: 3.5rem;
+  margin-top: 2.3rem;
+  // @include inline-padding-start(16.8rem);
+  //   @include inline-padding-end(16.8rem);
+  // padding: 0 16.8rem;
+  // margin-top: 4.5rem;
+  // margin-bottom: 3.5rem;
 
   @include breakpoint (tablet) {
-    padding: 0 10.5rem;
-    margin-top: 2.46rem;
+    margin-top:2.5rem;
+    // @include inline-padding-start(10.5rem);
+    // padding: 0 10.5rem;
+    // margin-top: 2.46rem;
   }
 
   p {
@@ -33,15 +37,22 @@
 
   figure {
     margin: 4rem auto 3rem auto;
-    padding: 0 16.6rem;
+    @include inline-padding-start(33.3rem);
+      @include inline-padding-end(33.3rem);
 
-    @include breakpoint (toDesktop) {
-      padding: 0;
-    }
-    @include breakpoint (toDesktop) {
-      margin: 4rem auto 4rem auto;
+    @include breakpoint (tablet) {
+      margin: 4rem auto 5rem auto;
+      @include inline-padding-start(10.4rem);
+        @include inline-padding-end(10.4rem);
+        width: 108%;
 
     }
+    @include breakpoint (phone) {
+      margin:2.9rem auto 6rem auto;
+      @include inline-padding-start(0);
+        @include inline-padding-end(0);
+
+  }
 
     figcaption {
       font-family: $cormorant;
@@ -56,7 +67,32 @@
         padding-left: 0rem;
         margin-top: 2.8rem;
       }
+      @include breakpoint (phone) {
+        font-size: 2.8rem;
+        line-height: 1.45;
+        @include inline-padding-start(8rem);
+         @include inline-padding-end(8rem);
+        margin-top: 2.3rem;
+      }
 
+
+    }
+  }
+
+  p,h3 {
+    @include inline-padding-start(16.8rem);
+      @include inline-padding-end(16.8rem);
+
+    @include breakpoint (tablet) {
+    @include inline-padding-start(10.5rem);
+      @include inline-padding-end(16.8rem);
+  }
+
+
+    @include breakpoint (phone) {
+
+       @include inline-padding-start(8rem);
+        @include inline-padding-end(7rem);
 
     }
   }

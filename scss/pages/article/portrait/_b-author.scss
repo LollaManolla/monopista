@@ -4,12 +4,44 @@
 
 .b-author {
   &--small {
-@include breakpoint (tablet) {
-  margin-bottom: calc(100% - 80%);
-}
-@include breakpoint (phone) {
-  margin-bottom: calc(100% - 80%);
-}
+        @include breakpoint (desktop) {
+    padding-bottom: 19%;
+    width:  21.555%;
+    margin-bottom: 6rem;
+  }
+    @include breakpoint (tablet) {
+      width: 36%;
+      top:-3rem;
+      padding-bottom: 21%;
+      margin-bottom: 16rem;
+      // margin-bottom: calc(100% - 80%);
+    }
 
+    img {
+          @include breakpoint (desktop) {
+      width: 43%;
+      bottom: -2em;
+      left: 45%;
+      transform: translateX(-45%);
+    }
+    @include breakpoint (tablet) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    }
+    .article-content {
+      width: 100%;
+
+      &-wrapper {
+        padding:9rem 0 0 0;
+        @include breakpoint (tablet) {
+          padding: 0 0 0 2rem;
+        }
+        @include breakpoint (phone) {
+          padding: 0 0 0 2rem;
+        }
+      }
+    }
   }
 }

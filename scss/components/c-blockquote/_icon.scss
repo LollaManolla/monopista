@@ -6,42 +6,34 @@
 &__icon {
 	font-family: $fontFontello;
 	display: block;
-	width: 76%;
-	float: right;
-	font-size: 2.99rem;
+	width: 100%;
+	font-size:3rem;
 	position: relative;
 	text-align: center;
-
+	padding-right: 19rem;
 	@include breakpoint (tablet) {
 		font-size: 5rem;
-		width: 94%;
-		left: 1rem;
-		position: relative;
-
+		padding-right: 20rem;
 	}
+
 	@include breakpoint (phone) {
 		font-size: 6.5rem;
-		width: 89.555%;
-		left: -8rem;
-		position: relative;
+		padding-right: 21rem;
 	}
-
 
 	&:before {
-		width: 30.222%;
+		width: 40%;
 		content: "";
 		position: absolute;
-		left: 9.9rem;
+		left: -8.4rem;
 		top: 50%;
 		@include breakpoint (tablet) {
-			width: 31%;
+			width: 44%;
+			left: -14.5rem;
 		}
 		@include breakpoint (phone) {
-			width: 30.55%;
-			left: 8rem;
+			width: 45.66%;
+			left: -13.7rem;
 		}
-
-
 	}
-
 }

@@ -1,0 +1,45 @@
+//-------------------------
+//------INLINE PADDING
+//-------------------------
+
+// EXAMPLE
+//
+//   @include inline-padding-start();
+//   @include inline-margin-start();
+//
+
+@mixin inline-padding-start($value) {
+  -moz-padding-start: $value;
+  -webkit-padding-start: $value;
+   -khtml-padding-start: $value;
+   -o-padding-start: $value;
+   padding-start: $value;
+
+}
+
+@mixin inline-padding-end($value) {
+  -moz-padding-end: $value;
+  -webkit-padding-end: $value;
+   -khtml-padding-end: $value;
+   -o-padding-end: $value;
+   padding-end: $value;
+
+}
+
+@mixin inline-margin-start($value) {
+  -moz-margin-start: $value;
+  -webkit-margin-start: $value;
+   -khtml-margin-start: $value;
+   -o-margin-start: $value;
+   margin-start: $value;
+
+}
+
+@mixin inline-margin-end($value) {
+  -moz-margin-end: $value;
+  -webkit-margin-end: $value;
+   -khtml-margin-end: $value;
+   -o-margin-end: $value;
+   margin-end: $value;
+
+}

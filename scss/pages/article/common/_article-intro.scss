@@ -9,10 +9,38 @@
   font-size: 2rem;
   line-height: 2;
 
+  // margin-top: 5.8rem;
+  @include inline-padding-start(16.8rem);
+  @include inline-padding-end(16rem);
+  clear: both;
+
   @include breakpoint (tablet) {
-    clear: both;
+    //clear: both;
 font-size: 3rem;
 line-height: 2.2;
 letter-spacing: -0.03rem;
+
+padding-top: 0;
+@include inline-padding-start(11rem);
+@include inline-padding-end(9rem);
+clear: none;
+margin-top: -5rem;
+
   }
+
+
+
+  @include breakpoint (phone) {
+
+    padding-top: 0;
+    @include inline-padding-start(8rem);
+    @include inline-padding-end(9rem);
+    clear: none;
+    margin-top: 0;
+    font-size: 3.58rem;
+    line-height: 1.85;
+  }
+
+
+
 }

@@ -8,8 +8,9 @@
   @include breakpoint (tablet) {
     margin-bottom: 11rem;
   }
-
-
+  @include breakpoint (phone) {
+  margin-bottom: 10.6rem;
+}
 
   @import
   "common/article-main-img",
@@ -24,40 +25,24 @@
   "common/single-image",
   "common/article-footer";
 
-
   //portrait
   &--portrait {
     @import
-    "portrait/article-main-img",
+    "portrait/article-header",
     "portrait/article-intro",
+    "portrait/article-main-img",
+    "portrait/article-title",
     "portrait/b-author",
-    "portrait/single-image";
+    "portrait/taglogo";
   }
 
-  &--landscape {
-    @import
-    "landscape/article-main-img",
-    "landscape/article-intro",
-    "landscape/b-author",
-    "landscape/article-title",
-    "landscape/article-main-content",
-    "landscape/taglogo",
-    "landscape/article-publish";
-  }
 
   &--recipes {
     @import
-    "recipes/article-main-img",
-    "recipes/article-intro",
-    "recipes/b-author",
-    "recipes/article-title",
-    "recipes/article-subtitle",
-    "recipes/article-main-content",
-    "recipes/taglogo",
-    "recipes/article-publish";
+    "recipes/article-subtitle";
   }
 
-@import "portrait/diaporama";
+  @import "portrait/diaporama";
 
   //colors
 

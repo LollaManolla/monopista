@@ -4,24 +4,23 @@
 
 img {
   max-width: none;
-  width: 45%;
-  position: absolute;
-  top: auto;
-  bottom: -1.8rem;
-  left: 44%;
-  transform: translateX(-44%);
+  width: 34%;
   z-index: 2;
+  position: absolute;
+  bottom: -2.2rem;
+  left: 22%;
+  transform: translateX(-22%);
+
   @include breakpoint (tablet){
 bottom: -2.1rem;
-width: 42%;
-left: 42%;
-  transform: translateX(-42%);
+width: 43%;
+left: 53%;
+  transform: translateX(-53%);
   }
   @include breakpoint (phone){
-    bottom: -0.6rem;
-    width: 55%;
-    left: 48%;
-    transform: translateX(-48%);
-    max-width: 100%;
+    bottom: 0;
+    width: 49%;
+    left: 36%;
+      transform: translateX(-36);
   }
 }

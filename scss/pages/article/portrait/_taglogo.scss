@@ -5,13 +5,16 @@
 
 .c-taglogo {
 
+  @include breakpoint (tablet) {
 
+
+    margin-bottom: 2.5rem;
+
+    top: auto;
+    padding-top: 6.5rem;
+
+  }
 @include breakpoint (phone) {
-//  width: 29%;
-  // margin-top: 0;
-  // margin-bottom: 0;
-  // padding-inline-start: 7.8rem;
-  // top: -3.6rem;
-  // position: relative;
+  top: -14rem;
 }
 }
