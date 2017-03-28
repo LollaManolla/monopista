@@ -1,0 +1,33 @@
+//-------------------------
+//-------------------BLOCK RECIPE text
+//-------------------------
+
+.b-title {
+	font-family: $helnubold ;
+	background-color: $white;
+	color: $grannyapple ;
+	display: inline-block;
+
+@include breakpoint (phone) {
+	font-size: 4.2rem;
+	padding: 0.5rem;
+}
+
+}
+
+.b-subtitle {
+	font-family: $Helnuboldconde ;
+	text-transform: uppercase;
+	color: $black;
+
+	@include breakpoint (phone) {
+		font-size: 2.95rem;
+		padding-left: 0.5rem;
+letter-spacing: -0.06rem;
+	}
+
+	span {
+		padding: 0 0.5rem;
+	}
+
+}

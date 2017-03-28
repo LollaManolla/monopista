@@ -4976,6 +4976,97 @@ h4 {
   }
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/blocks\/b-recipe\/_default\.scss}line{font-family:\000035}}
+.b-recipe {
+  background-color: #C1F1C6;
+  margin-top: 3.8rem;
+  margin-bottom: 3.8rem;
+  position: relative;
+}
+@media (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/blocks\/b-recipe\/_default\.scss}line{font-family:\000035}}
+  .b-recipe {
+    padding: 10rem 8rem;
+    -moz-margin-start: 8rem;
+    -webkit-margin-start: 8rem;
+    -khtml-margin-start: 8rem;
+    -o-margin-start: 8rem;
+    margin-start: 8rem;
+    -moz-margin-end: 8rem;
+    -webkit-margin-end: 8rem;
+    -khtml-margin-end: 8rem;
+    -o-margin-end: 8rem;
+    margin-end: 8rem;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/blocks\/b-recipe\/_text\.scss}line{font-family:\000035}}
+.b-recipe .b-title {
+  font-family: "Helnubold", Arial, Helvetica, Tahoma, sans-serif;
+  background-color: #FFF;
+  color: #C1F1C6;
+  display: inline-block;
+}
+@media (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/blocks\/b-recipe\/_text\.scss}line{font-family:\000035}}
+  .b-recipe .b-title {
+    font-size: 4.2rem;
+    padding: 0.5rem;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/blocks\/b-recipe\/_text\.scss}line{font-family:\0000318}}
+.b-recipe .b-subtitle {
+  font-family: "Helnuboldconde", Arial, Helvetica, Tahoma, sans-serif;
+  text-transform: uppercase;
+  color: #000;
+}
+@media (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/blocks\/b-recipe\/_text\.scss}line{font-family:\0000318}}
+  .b-recipe .b-subtitle {
+    font-size: 2.95rem;
+    padding-left: 0.5rem;
+    letter-spacing: -0.06rem;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/blocks\/b-recipe\/_text\.scss}line{font-family:\0000329}}
+.b-recipe .b-subtitle span {
+  padding: 0 0.5rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/blocks\/b-recipe\/_list\.scss}line{font-family:\000035}}
+.b-recipe ul {
+  display: table;
+}
+@media (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/blocks\/b-recipe\/_list\.scss}line{font-family:\000035}}
+  .b-recipe ul {
+    font-size: 3rem;
+    margin-top: 3.3rem;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/blocks\/b-recipe\/_list\.scss}line{font-family:\0000311}}
+  .b-recipe ul li {
+    display: table-row;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/blocks\/b-recipe\/_list\.scss}line{font-family:\0000313}}
+  .b-recipe ul li:before {
+    content: "\2022";
+    position: relative;
+    display: table-cell;
+    font-weight: 600;
+    font-size: 3rem;
+    left: -0.8rem;
+    line-height: 2.2;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/blocks\/b-recipe\/_default\.scss}line{font-family:\0000318}}
+.b-recipe:before {
+  position: absolute;
+  content: '';
+  top: 3.5rem;
+  bottom: 3.5rem;
+  left: 2.5rem;
+  right: 2.5rem;
+  border: 0.4rem solid #FFF;
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/components\/c-menu\/_default\.scss}line{font-family:\000035}}
 .c-menu {
   margin-top: 1%;
@@ -6641,7 +6732,7 @@ h4 {
   text-align: center;
   z-index: 2;
 }
-@media (min-width: 767px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\0000318}}
   .article .diaporama--portrait .diaporama__thumbnails {
     display: none;
@@ -6669,7 +6760,7 @@ h4 {
   transition: 0.3s all ease-in;
   cursor: pointer;
 }
-@media (min-width: 767px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\0000333}}
   .article .diaporama--portrait .openDiaporama {
     display: none;
@@ -6703,7 +6794,7 @@ h4 {
   overflow: hidden;
   padding-top: 5%;
 }
-@media (min-width: 767px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\0000363}}
   .article .diaporama--portrait.fullscreen .slider-for {
     padding: 0;
@@ -6715,7 +6806,13 @@ h4 {
     height: 90%;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\0000373}}
+@media (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\0000363}}
+  .article .diaporama--portrait.fullscreen .slider-for {
+    height: 100%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\0000376}}
 .article .diaporama--portrait.fullscreen .slider-for .slick-prev {
   visibility: hidden;
   position: absolute;
@@ -6724,14 +6821,14 @@ h4 {
   z-index: 10;
   cursor: pointer;
 }
-@media (min-width: 767px) and (max-width: 1024px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\0000373}}
+@media (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\0000376}}
   .article .diaporama--portrait.fullscreen .slider-for .slick-prev {
     left: 2%;
     top: 30%;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\0000387}}
 .article .diaporama--portrait.fullscreen .slider-for .slick-prev:before {
   background-image: url(../_common/images/arrow-left.png);
   background-position: center;
@@ -6742,7 +6839,7 @@ h4 {
   visibility: visible;
   background-repeat: no-repeat;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\0000395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\0000398}}
 .article .diaporama--portrait.fullscreen .slider-for .slick-next {
   visibility: hidden;
   position: absolute;
@@ -6751,14 +6848,14 @@ h4 {
   z-index: 10;
   cursor: pointer;
 }
-@media (min-width: 767px) and (max-width: 1024px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\0000395}}
+@media (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\0000398}}
   .article .diaporama--portrait.fullscreen .slider-for .slick-next {
     right: 2%;
     top: 30%;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003106}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003109}}
 .article .diaporama--portrait.fullscreen .slider-for .slick-next:before {
   background-image: url(../_common/images/arrow-right.png);
   background-position: center;
@@ -6769,50 +6866,50 @@ h4 {
   visibility: visible;
   background-repeat: no-repeat;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003117}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003120}}
 .article .diaporama--portrait.fullscreen .slider-for .slick-list {
   height: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003120}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003123}}
 .article .diaporama--portrait.fullscreen .slider-for .slick-track {
   height: 95%;
   overflow: hidden;
 }
-@media (min-width: 767px) and (max-width: 1024px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003120}}
+@media (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003123}}
   .article .diaporama--portrait.fullscreen .slider-for .slick-track {
     height: 98%;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003127}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003130}}
 .article .diaporama--portrait.fullscreen .slider-for .slick-slide {
   padding: 5rem;
 }
-@media (min-width: 767px) and (max-width: 1024px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003127}}
+@media (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003130}}
   .article .diaporama--portrait.fullscreen .slider-for .slick-slide {
     padding: 0;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003133}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003136}}
 .article .diaporama--portrait.fullscreen .slider-for .slick-slide img {
   width: 30%;
   margin-left: 25%;
 }
-@media (min-width: 767px) and (max-width: 1024px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003133}}
+@media (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003136}}
   .article .diaporama--portrait.fullscreen .slider-for .slick-slide img {
     width: 45.574%;
   }
 }
 @media screen and (min-width: 1020px) and (max-width: 1024px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003133}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003136}}
   .article .diaporama--portrait.fullscreen .slider-for .slick-slide img {
     width: 25%;
     margin-left: 35%;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003144}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003147}}
 .article .diaporama--portrait.fullscreen .slider-forItemHolder {
   position: absolute;
   top: 0%;
@@ -6820,16 +6917,22 @@ h4 {
   right: 10%;
   color: #FFF;
 }
-@media (min-width: 767px) and (max-width: 1024px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003144}}
+@media (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003147}}
   .article .diaporama--portrait.fullscreen .slider-forItemHolder {
-    bottom: 3%;
+    bottom: 4%;
     left: 13%;
     right: 13%;
     top: auto;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003156}}
+@media (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003147}}
+  .article .diaporama--portrait.fullscreen .slider-forItemHolder {
+    bottom: 17%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003162}}
 .article .diaporama--portrait.fullscreen .slider-forItemHolder h2 {
   line-height: 3.5rem;
   font-weight: 900;
@@ -6839,17 +6942,23 @@ h4 {
   position: relative;
   font-family: "Open Sans", Arial, Helvetica, Tahoma, sans-serif;
 }
-@media (min-width: 767px) and (max-width: 1024px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003156}}
+@media (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003162}}
   .article .diaporama--portrait.fullscreen .slider-forItemHolder h2 {
-    font-size: 25px;
+    font-size: 2.5rem;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003167}}
+@media (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003162}}
+  .article .diaporama--portrait.fullscreen .slider-forItemHolder h2 {
+    font-size: 3rem;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003176}}
 .article .diaporama--portrait.fullscreen .slider-forItemHolder h2:before {
   position: absolute;
   left: -5%;
-  width: 4px;
+  width: 0.4rem;
   /* bottom: 0; */
   top: 11%;
   content: '';
@@ -6858,46 +6967,135 @@ h4 {
   /* right: 2px; */
   height: 81%;
 }
-@media (min-width: 767px) and (max-width: 1024px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003167}}
+@media (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003176}}
   .article .diaporama--portrait.fullscreen .slider-forItemHolder h2:before {
     top: 20%;
     left: -3%;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003184}}
+@media (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003176}}
+  .article .diaporama--portrait.fullscreen .slider-forItemHolder h2:before {
+    top: 0;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003196}}
 .article .diaporama--portrait.fullscreen .slider-forItemHolder p {
   line-height: 2.5rem;
   font-weight: 600;
   font-size: 1.3rem;
 }
-@media (min-width: 767px) and (max-width: 1024px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003184}}
+@media (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003196}}
   .article .diaporama--portrait.fullscreen .slider-forItemHolder p {
     font-size: 1.6rem;
     line-height: 3.5rem;
   }
 }
+@media (max-width: 767px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003196}}
-.article .diaporama--portrait.fullscreen .slider-nav {
-  height: 30%;
-  width: 75%;
-  margin-left: -7%;
-}
-@media (min-width: 767px) and (max-width: 1024px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003196}}
-  .article .diaporama--portrait.fullscreen .slider-nav {
-    margin-left: -9.5%;
-    position: absolute;
-    top: 49%;
-    width: 95%;
+  .article .diaporama--portrait.fullscreen .slider-forItemHolder p {
+    font-size: 2.8rem;
+    line-height: 5rem;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003206}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003212}}
+.article .diaporama--portrait.fullscreen .slider-nav {
+  height: 30%;
+  margin-left: -10%;
+  padding: 0 20%;
+  padding-right: 41%;
+}
+@media (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003212}}
+  .article .diaporama--portrait.fullscreen .slider-nav {
+    margin-left: 3.5%;
+    position: absolute;
+    top: 48%;
+    padding: 0 10%;
+    padding-right: 15%;
+    width: 80%;
+  }
+}
+@media (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003212}}
+  .article .diaporama--portrait.fullscreen .slider-nav {
+    position: absolute;
+    top: 36%;
+    padding: 0;
+    width: 100%;
+    left: 0;
+    margin: 0;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003233}}
 .article .diaporama--portrait.fullscreen .slider-nav .slick-slide {
   margin-right: 1%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003211}}
+@media (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003233}}
+  .article .diaporama--portrait.fullscreen .slider-nav .slick-slide {
+    margin-right: 0.5%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003239}}
+.article .diaporama--portrait.fullscreen .slider-nav .slick-prev {
+  visibility: hidden;
+  position: absolute;
+  top: 8.1%;
+  left: 63.5%;
+  z-index: 10;
+  cursor: pointer;
+}
+@media (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003239}}
+  .article .diaporama--portrait.fullscreen .slider-nav .slick-prev {
+    left: 81%;
+    top: 4%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003250}}
+.article .diaporama--portrait.fullscreen .slider-nav .slick-prev:before {
+  background-image: url(../_common/images/arrow-left.png);
+  background-position: center;
+  display: block;
+  content: '';
+  width: 50px;
+  height: 30px;
+  visibility: visible;
+  background-repeat: no-repeat;
+  background-size: 30px 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003262}}
+.article .diaporama--portrait.fullscreen .slider-nav .slick-next {
+  visibility: hidden;
+  position: absolute;
+  top: 8%;
+  right: 30%;
+  z-index: 10;
+  cursor: pointer;
+}
+@media (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003262}}
+  .article .diaporama--portrait.fullscreen .slider-nav .slick-next {
+    right: 2%;
+    top: 4%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003273}}
+.article .diaporama--portrait.fullscreen .slider-nav .slick-next:before {
+  background-image: url(../_common/images/arrow-right.png);
+  background-position: center;
+  display: block;
+  content: '';
+  width: 50px;
+  height: 30px;
+  visibility: visible;
+  background-repeat: no-repeat;
+  background-size: 30px 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003287}}
 .article .diaporama--portrait.openFull {
   -moz-transition: 0.3s all ease-in;
   -o-transition: 0.3s all ease-in;
@@ -6909,20 +7107,26 @@ h4 {
   bottom: 0;
   width: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003218}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003294}}
 .article .diaporama--portrait.openFull .closeDiaporama {
   position: absolute;
   cursor: pointer;
   top: 4.164%;
   right: 3.164%;
 }
-@media (min-width: 767px) and (max-width: 1024px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003218}}
+@media (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003294}}
   .article .diaporama--portrait.openFull .closeDiaporama {
     top: 2%;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003227}}
+@media (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003302}}
+  .article .diaporama--portrait.openFull .closeDiaporama img {
+    width: 70%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003308}}
 .article .diaporama--portrait.openFull .social {
   font-family: "fontello";
   position: absolute;
@@ -6931,12 +7135,18 @@ h4 {
   text-align: center;
 }
 @media screen and (min-width: 1020px) and (max-width: 1024px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003227}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003308}}
   .article .diaporama--portrait.openFull .social {
     bottom: 5%;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003236}}
+@media (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003308}}
+  .article .diaporama--portrait.openFull .social {
+    bottom: 5%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003320}}
 .article .diaporama--portrait.openFull .social:after {
   display: block;
   width: 4rem;
@@ -6944,8 +7154,8 @@ h4 {
   background-color: #FFF;
   content: '';
 }
-@media (min-width: 767px) and (max-width: 1024px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003236}}
+@media (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003320}}
   .article .diaporama--portrait.openFull .social:after {
     display: block;
     width: 2px;
@@ -6957,142 +7167,162 @@ h4 {
     top: -1rem;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003253}}
+@media (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003320}}
+  .article .diaporama--portrait.openFull .social:after {
+    display: block;
+    width: 0.4rem;
+    height: 100%;
+    background-color: #FFF;
+    content: '';
+    position: absolute;
+    right: -6rem;
+    top: 0rem;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003347}}
 .article .diaporama--portrait.openFull .social a {
   color: #FFF;
   font-size: 2.2rem;
   display: block;
   margin-bottom: 2.5rem;
 }
-@media (min-width: 767px) and (max-width: 1024px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003253}}
+@media (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003347}}
   .article .diaporama--portrait.openFull .social a {
     display: inline-block;
     margin-left: 4rem;
     margin-bottom: auto;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000358}}
+@media (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/portrait\/_diaporama\.scss}line{font-family:\00003347}}
+  .article .diaporama--portrait.openFull .social a {
+    font-size: 6rem;
+    margin-left: 10rem;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000353}}
 .article.food .article-title:before {
   content: "";
   border-width: 0 0 0 0.4rem;
   border-style: solid;
   border-color: transparent transparent transparent #94EC9E;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000361}}
 .article.food .article-main-content a {
   background-color: #94EC9E;
   font-weight: 600;
   color: #000;
   padding: 0rem 0.6rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000368}}
 .article.food .c-blockquote__icon {
   color: #94EC9E;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000375}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000370}}
 .article.food .c-blockquote__icon:before {
   border: solid 0.3rem #94EC9E;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000374}}
 .article.food .c-tags__item:after,
 .article.food .article-video {
   border-color: #94EC9E;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000379}}
 .article.food.article--recipes h3 {
   color: #94EC9E;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000353}}
 .article.beauty .article-title:before {
   content: "";
   border-width: 0 0 0 0.4rem;
   border-style: solid;
   border-color: transparent transparent transparent #F0CBC5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000361}}
 .article.beauty .article-main-content a {
   background-color: #F0CBC5;
   font-weight: 600;
   color: #000;
   padding: 0rem 0.6rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000368}}
 .article.beauty .c-blockquote__icon {
   color: #F0CBC5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000375}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000370}}
 .article.beauty .c-blockquote__icon:before {
   border: solid 0.3rem #F0CBC5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000374}}
 .article.beauty .c-tags__item:after,
 .article.beauty .article-video {
   border-color: #F0CBC5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000379}}
 .article.beauty.article--recipes h3 {
   color: #F0CBC5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000353}}
 .article.deco .article-title:before {
   content: "";
   border-width: 0 0 0 0.4rem;
   border-style: solid;
   border-color: transparent transparent transparent #E4D1B0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000361}}
 .article.deco .article-main-content a {
   background-color: #E4D1B0;
   font-weight: 600;
   color: #000;
   padding: 0rem 0.6rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000368}}
 .article.deco .c-blockquote__icon {
   color: #E4D1B0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000375}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000370}}
 .article.deco .c-blockquote__icon:before {
   border: solid 0.3rem #E4D1B0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000374}}
 .article.deco .c-tags__item:after,
 .article.deco .article-video {
   border-color: #E4D1B0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000379}}
 .article.deco.article--recipes h3 {
   color: #E4D1B0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000353}}
 .article.fashion .article-title:before {
   content: "";
   border-width: 0 0 0 0.4rem;
   border-style: solid;
   border-color: transparent transparent transparent #ABE5DC;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000361}}
 .article.fashion .article-main-content a {
   background-color: #ABE5DC;
   font-weight: 600;
   color: #000;
   padding: 0rem 0.6rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000368}}
 .article.fashion .c-blockquote__icon {
   color: #ABE5DC;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000375}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000370}}
 .article.fashion .c-blockquote__icon:before {
   border: solid 0.3rem #ABE5DC;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000374}}
 .article.fashion .c-tags__item:after,
 .article.fashion .article-video {
   border-color: #ABE5DC;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/diwaneemac\/Downloads\/monopista\/scss\/pages\/article\/_default\.scss}line{font-family:\0000379}}
 .article.fashion.article--recipes h3 {
   color: #ABE5DC;
 }

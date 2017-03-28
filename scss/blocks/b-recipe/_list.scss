@@ -1,0 +1,34 @@
+//-------------------------
+//-------------------BLOCK RECIPE list
+//-------------------------
+
+ul {
+	display: table;
+	@include breakpoint (phone) {
+		font-size: 3rem;
+		margin-top: 3.3rem;
+
+		li {
+			 display: table-row;
+			&:before {
+				content:"\2022";
+				position: relative;
+			display: table-cell;
+			font-weight: 600;
+
+				font-size:3rem;
+
+
+
+
+
+
+//phone
+left: -0.8rem;
+line-height: 2.2;
+
+
+			}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+//-------------------------
+//-------------------BLOCK RECIPE
+//-------------------------
+
+.b-recipe {
+	background-color: $grannyapple;
+	margin-top: 3.8rem;
+	margin-bottom:3.8rem;
+	position: relative;
+	@include breakpoint (phone) {
+		padding: 10rem 8rem;
+		@include inline-margin-start(8rem);
+			@include inline-margin-end(8rem);
+	}
+
+		@import "text",
+		"list";
+		&:before {
+		    position: absolute;
+		    content: '';
+		    top: 3.5rem;
+		    bottom: 3.5rem; //phone
+		    left: 2.5rem;
+		    right: 2.5rem;
+		    border: 0.4rem solid $white;
+
+}
+}
